@@ -1,0 +1,451 @@
+2026-10-19T11:31:31.407886+02:00 DESKTOP-1Q1LLS5 login[766]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-19T11:31:31.408000+02:00 DESKTOP-1Q1LLS5 login[766]: PAM adding faulty module: pam_lastlog.so
+2026-10-19T11:31:31.711955+02:00 DESKTOP-1Q1LLS5 login[766]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-19T11:31:31.789918+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: New session 1 of user wztq.
+2026-10-19T11:31:31.804052+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-19T11:35:01.863877+02:00 DESKTOP-1Q1LLS5 CRON[2181]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T11:35:01.866243+02:00 DESKTOP-1Q1LLS5 CRON[2181]: pam_unix(cron:session): session closed for user root
+2026-10-19T11:45:01.892671+02:00 DESKTOP-1Q1LLS5 CRON[3967]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T11:45:01.895210+02:00 DESKTOP-1Q1LLS5 CRON[3967]: pam_unix(cron:session): session closed for user root
+2026-10-19T11:55:01.911973+02:00 DESKTOP-1Q1LLS5 CRON[5755]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T11:55:01.926059+02:00 DESKTOP-1Q1LLS5 CRON[5755]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:05:01.923555+02:00 DESKTOP-1Q1LLS5 CRON[7664]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:05:01.925770+02:00 DESKTOP-1Q1LLS5 CRON[7664]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:15:01.934345+02:00 DESKTOP-1Q1LLS5 CRON[9447]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:15:01.936223+02:00 DESKTOP-1Q1LLS5 CRON[9447]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:17:01.939786+02:00 DESKTOP-1Q1LLS5 CRON[9806]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:17:01.943018+02:00 DESKTOP-1Q1LLS5 CRON[9806]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:25:01.953832+02:00 DESKTOP-1Q1LLS5 CRON[11273]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:25:01.968223+02:00 DESKTOP-1Q1LLS5 CRON[11273]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:35:01.988402+02:00 DESKTOP-1Q1LLS5 CRON[13243]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:35:01.990326+02:00 DESKTOP-1Q1LLS5 CRON[13243]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:45:01.020407+02:00 DESKTOP-1Q1LLS5 CRON[15026]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:45:01.022309+02:00 DESKTOP-1Q1LLS5 CRON[15026]: pam_unix(cron:session): session closed for user root
+2026-10-19T12:55:01.052375+02:00 DESKTOP-1Q1LLS5 CRON[16811]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T12:55:01.057174+02:00 DESKTOP-1Q1LLS5 CRON[16811]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:05:01.095805+02:00 DESKTOP-1Q1LLS5 CRON[18673]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:05:01.098132+02:00 DESKTOP-1Q1LLS5 CRON[18673]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:15:01.136844+02:00 DESKTOP-1Q1LLS5 CRON[20556]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:15:01.138711+02:00 DESKTOP-1Q1LLS5 CRON[20556]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:17:01.142668+02:00 DESKTOP-1Q1LLS5 CRON[20919]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:17:01.144465+02:00 DESKTOP-1Q1LLS5 CRON[20919]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:25:01.176290+02:00 DESKTOP-1Q1LLS5 CRON[22391]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:25:01.181637+02:00 DESKTOP-1Q1LLS5 CRON[22391]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:35:01.199509+02:00 DESKTOP-1Q1LLS5 CRON[24545]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:35:01.205161+02:00 DESKTOP-1Q1LLS5 CRON[24545]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:45:01.609217+02:00 DESKTOP-1Q1LLS5 CRON[26372]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:45:01.610990+02:00 DESKTOP-1Q1LLS5 CRON[26372]: pam_unix(cron:session): session closed for user root
+2026-10-19T13:55:01.623258+02:00 DESKTOP-1Q1LLS5 CRON[28143]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T13:55:01.643140+02:00 DESKTOP-1Q1LLS5 CRON[28143]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:05:02.030414+02:00 DESKTOP-1Q1LLS5 CRON[30437]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:05:02.033097+02:00 DESKTOP-1Q1LLS5 CRON[30437]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:15:02.335676+02:00 DESKTOP-1Q1LLS5 CRON[32214]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:15:02.338581+02:00 DESKTOP-1Q1LLS5 CRON[32214]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:17:02.504880+02:00 DESKTOP-1Q1LLS5 CRON[32568]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:17:02.509344+02:00 DESKTOP-1Q1LLS5 CRON[32568]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:25:02.561648+02:00 DESKTOP-1Q1LLS5 CRON[33965]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:25:02.563480+02:00 DESKTOP-1Q1LLS5 CRON[33965]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:35:03.166347+02:00 DESKTOP-1Q1LLS5 CRON[35703]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:35:03.168342+02:00 DESKTOP-1Q1LLS5 CRON[35703]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:45:02.419703+02:00 DESKTOP-1Q1LLS5 CRON[37538]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:45:02.422246+02:00 DESKTOP-1Q1LLS5 CRON[37538]: pam_unix(cron:session): session closed for user root
+2026-10-19T14:55:02.167363+02:00 DESKTOP-1Q1LLS5 CRON[39357]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T14:55:02.170463+02:00 DESKTOP-1Q1LLS5 CRON[39357]: pam_unix(cron:session): session closed for user root
+2026-10-19T15:05:03.366623+02:00 DESKTOP-1Q1LLS5 CRON[41347]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T15:05:03.369265+02:00 DESKTOP-1Q1LLS5 CRON[41347]: pam_unix(cron:session): session closed for user root
+2026-10-19T15:10:04.461574+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: The system will power off now!
+2026-10-19T15:10:04.472125+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: System is powering down.
+2026-10-19T18:57:36.516394+02:00 DESKTOP-1Q1LLS5 systemd-logind[322]: New seat seat0.
+2026-10-19T18:57:36.558373+02:00 DESKTOP-1Q1LLS5 polkitd[317]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-19T18:57:36.558726+02:00 DESKTOP-1Q1LLS5 polkitd[317]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-19T18:57:36.561308+02:00 DESKTOP-1Q1LLS5 polkitd[317]: Finished loading, compiling and executing 6 rules
+2026-10-19T18:57:36.563067+02:00 DESKTOP-1Q1LLS5 polkitd[317]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-19T18:57:39.052175+02:00 DESKTOP-1Q1LLS5 login[749]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-19T18:57:39.052257+02:00 DESKTOP-1Q1LLS5 login[749]: PAM adding faulty module: pam_lastlog.so
+2026-10-19T18:57:39.304064+02:00 DESKTOP-1Q1LLS5 login[749]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-19T18:57:39.310371+02:00 DESKTOP-1Q1LLS5 systemd-logind[322]: New session 1 of user wztq.
+2026-10-19T18:57:39.392978+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-19T19:05:01.457058+02:00 DESKTOP-1Q1LLS5 CRON[884]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T19:05:01.459404+02:00 DESKTOP-1Q1LLS5 CRON[884]: pam_unix(cron:session): session closed for user root
+2026-10-19T19:15:01.483098+02:00 DESKTOP-1Q1LLS5 CRON[927]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T19:15:01.487958+02:00 DESKTOP-1Q1LLS5 CRON[927]: pam_unix(cron:session): session closed for user root
+2026-10-19T19:17:01.491282+02:00 DESKTOP-1Q1LLS5 CRON[964]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T19:17:01.494105+02:00 DESKTOP-1Q1LLS5 CRON[964]: pam_unix(cron:session): session closed for user root
+2026-10-19T19:19:56.828726+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/chmod +x myscript.sh
+2026-10-19T19:19:56.834491+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-19T19:19:56.834546+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-19T19:25:01.508117+02:00 DESKTOP-1Q1LLS5 CRON[2740]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-19T19:25:01.512801+02:00 DESKTOP-1Q1LLS5 CRON[2740]: pam_unix(cron:session): session closed for user root
+2026-10-19T19:29:08.081991+02:00 DESKTOP-1Q1LLS5 systemd-logind[322]: The system will power off now!
+2026-10-19T19:29:08.094696+02:00 DESKTOP-1Q1LLS5 systemd-logind[322]: System is powering down.
+2026-10-20T13:33:14.150210+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: New seat seat0.
+2026-10-20T13:33:14.194981+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T13:33:14.195061+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T13:33:14.198785+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T13:33:14.201433+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-20T13:33:16.529943+02:00 DESKTOP-1Q1LLS5 login[751]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-20T13:33:16.530023+02:00 DESKTOP-1Q1LLS5 login[751]: PAM adding faulty module: pam_lastlog.so
+2026-10-20T13:33:16.784351+02:00 DESKTOP-1Q1LLS5 login[751]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-20T13:33:16.851597+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: New session 1 of user wztq.
+2026-10-20T13:33:16.863772+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-20T13:35:01.059726+02:00 DESKTOP-1Q1LLS5 CRON[1498]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T13:35:01.062308+02:00 DESKTOP-1Q1LLS5 CRON[1498]: pam_unix(cron:session): session closed for user root
+2026-10-20T13:45:01.083173+02:00 DESKTOP-1Q1LLS5 CRON[3398]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T13:45:01.085739+02:00 DESKTOP-1Q1LLS5 CRON[3398]: pam_unix(cron:session): session closed for user root
+2026-10-20T13:49:17.894530+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-20T13:49:17.908770+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T13:49:32.381571+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T13:49:32.386977+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install -y htop
+2026-10-20T13:49:32.387603+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T13:49:35.606063+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T13:55:01.100662+02:00 DESKTOP-1Q1LLS5 CRON[5715]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T13:55:01.103465+02:00 DESKTOP-1Q1LLS5 CRON[5715]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:05:01.120084+02:00 DESKTOP-1Q1LLS5 CRON[7530]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:05:01.122046+02:00 DESKTOP-1Q1LLS5 CRON[7530]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:13:14.190783+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:13:14.190939+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:13:14.190985+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:13:14.191011+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:13:14.193258+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:13:14.193315+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:13:14.193347+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:13:14.193395+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:13:14.193455+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:13:14.194197+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:13:27.532328+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:13:27.532400+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:13:27.532439+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:13:27.532512+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:13:27.533150+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:13:27.533202+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:13:27.533240+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:13:27.533276+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:13:27.533307+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:13:27.534061+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:23.319626+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:14:23.319714+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:14:23.319774+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:14:23.319872+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:14:23.320446+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:23.320491+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:14:23.320520+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:14:23.320547+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:14:23.320737+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:14:23.321330+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:23.321372+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:14:23.321389+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:14:23.321425+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:14:23.321443+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:14:23.322202+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:23.322256+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Reloading rules
+2026-10-20T14:14:23.322290+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Collecting garbage unconditionally...
+2026-10-20T14:14:23.322326+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:14:23.322362+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:14:23.323049+02:00 DESKTOP-1Q1LLS5 polkitd[320]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:24.198665+02:00 DESKTOP-1Q1LLS5 polkitd[14837]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-20T14:14:24.198720+02:00 DESKTOP-1Q1LLS5 polkitd[14837]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-20T14:14:24.199529+02:00 DESKTOP-1Q1LLS5 polkitd[14837]: Finished loading, compiling and executing 6 rules
+2026-10-20T14:14:24.200037+02:00 DESKTOP-1Q1LLS5 polkitd[14837]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-20T14:15:01.185945+02:00 DESKTOP-1Q1LLS5 CRON[17145]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:15:01.187967+02:00 DESKTOP-1Q1LLS5 CRON[17145]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:17:01.191497+02:00 DESKTOP-1Q1LLS5 CRON[23296]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:17:01.203002+02:00 DESKTOP-1Q1LLS5 CRON[23296]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:25:01.661223+02:00 DESKTOP-1Q1LLS5 CRON[26173]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:25:01.663640+02:00 DESKTOP-1Q1LLS5 CRON[26173]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:30:07.524417+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt remove htop
+2026-10-20T14:30:07.535072+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:30:11.941652+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:30:19.006594+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-10-20T14:30:19.007320+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:30:21.733672+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:31:24.743163+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install notexist
+2026-10-20T14:31:24.744189+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:31:25.061002+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:34:38.664946+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-10-20T14:34:38.675221+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:34:39.205677+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:35:01.702348+02:00 DESKTOP-1Q1LLS5 CRON[28257]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:35:01.704491+02:00 DESKTOP-1Q1LLS5 CRON[28257]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:35:25.255290+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt remove htop
+2026-10-20T14:35:25.268955+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:35:28.337319+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:35:30.935675+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-10-20T14:35:30.936282+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:35:33.429943+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:35:53.416618+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt remove -y htop
+2026-10-20T14:35:53.417195+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:35:55.306401+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:36:08.910132+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-10-20T14:36:08.910969+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:36:10.976267+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:36:45.076290+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install notexist
+2026-10-20T14:36:45.078237+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:36:45.471675+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:39:28.095054+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt remove -y htop
+2026-10-20T14:39:28.105394+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:39:30.898951+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:39:52.738002+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-10-20T14:39:52.738712+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:39:54.852588+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:41:00.383985+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install notexist
+2026-10-20T14:41:00.402324+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:41:00.691596+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T14:45:01.644965+02:00 DESKTOP-1Q1LLS5 CRON[30749]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:45:01.646990+02:00 DESKTOP-1Q1LLS5 CRON[30749]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:55:01.605384+02:00 DESKTOP-1Q1LLS5 CRON[32578]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T14:55:01.607344+02:00 DESKTOP-1Q1LLS5 CRON[32578]: pam_unix(cron:session): session closed for user root
+2026-10-20T14:55:09.674088+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt install notexist
+2026-10-20T14:55:09.688755+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T14:55:09.976501+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T15:05:01.612195+02:00 DESKTOP-1Q1LLS5 CRON[34397]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:05:01.626951+02:00 DESKTOP-1Q1LLS5 CRON[34397]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:15:01.402867+02:00 DESKTOP-1Q1LLS5 CRON[36165]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:15:01.404817+02:00 DESKTOP-1Q1LLS5 CRON[36165]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:17:02.213141+02:00 DESKTOP-1Q1LLS5 CRON[36519]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:17:02.225402+02:00 DESKTOP-1Q1LLS5 CRON[36519]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:25:01.730460+02:00 DESKTOP-1Q1LLS5 CRON[37946]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:25:01.732501+02:00 DESKTOP-1Q1LLS5 CRON[37946]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:35:02.385478+02:00 DESKTOP-1Q1LLS5 CRON[39712]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:35:02.387289+02:00 DESKTOP-1Q1LLS5 CRON[39712]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:45:01.541777+02:00 DESKTOP-1Q1LLS5 CRON[41475]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:45:01.543822+02:00 DESKTOP-1Q1LLS5 CRON[41475]: pam_unix(cron:session): session closed for user root
+2026-10-20T15:55:03.099413+02:00 DESKTOP-1Q1LLS5 CRON[43265]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T15:55:03.101304+02:00 DESKTOP-1Q1LLS5 CRON[43265]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:05:02.162939+02:00 DESKTOP-1Q1LLS5 CRON[45013]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:05:02.175776+02:00 DESKTOP-1Q1LLS5 CRON[45013]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:15:01.709609+02:00 DESKTOP-1Q1LLS5 CRON[46774]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:15:01.711466+02:00 DESKTOP-1Q1LLS5 CRON[46774]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:17:02.577498+02:00 DESKTOP-1Q1LLS5 CRON[47128]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:17:02.579414+02:00 DESKTOP-1Q1LLS5 CRON[47128]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:25:02.292943+02:00 DESKTOP-1Q1LLS5 CRON[48542]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:25:02.295150+02:00 DESKTOP-1Q1LLS5 CRON[48542]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:35:02.597690+02:00 DESKTOP-1Q1LLS5 CRON[50302]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:35:02.599559+02:00 DESKTOP-1Q1LLS5 CRON[50302]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:45:02.230904+02:00 DESKTOP-1Q1LLS5 CRON[52051]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:45:02.233183+02:00 DESKTOP-1Q1LLS5 CRON[52051]: pam_unix(cron:session): session closed for user root
+2026-10-20T16:49:06.951527+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad1.sh
+2026-10-20T16:49:06.968148+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T16:49:06.968260+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T16:55:03.410338+02:00 DESKTOP-1Q1LLS5 CRON[53888]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T16:55:03.412545+02:00 DESKTOP-1Q1LLS5 CRON[53888]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:05:01.636901+02:00 DESKTOP-1Q1LLS5 CRON[55654]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:05:01.650734+02:00 DESKTOP-1Q1LLS5 CRON[55654]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:15:02.916990+02:00 DESKTOP-1Q1LLS5 CRON[57391]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:15:02.919052+02:00 DESKTOP-1Q1LLS5 CRON[57391]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:17:02.219959+02:00 DESKTOP-1Q1LLS5 CRON[57739]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:17:02.222391+02:00 DESKTOP-1Q1LLS5 CRON[57739]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:25:02.454425+02:00 DESKTOP-1Q1LLS5 CRON[59148]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:25:02.456236+02:00 DESKTOP-1Q1LLS5 CRON[59148]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:30:17.102180+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad2.sh
+2026-10-20T17:30:17.116556+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T17:30:17.116630+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T17:35:03.321428+02:00 DESKTOP-1Q1LLS5 CRON[61027]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:35:03.323294+02:00 DESKTOP-1Q1LLS5 CRON[61027]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:38:17.794989+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad3.sh
+2026-10-20T17:38:17.809029+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T17:38:17.809113+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T17:44:54.864668+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad4.sh
+2026-10-20T17:44:54.878260+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T17:44:54.878344+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T17:45:03.319840+02:00 DESKTOP-1Q1LLS5 CRON[62978]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:45:03.321672+02:00 DESKTOP-1Q1LLS5 CRON[62978]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:50:09.150414+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/5 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad5.sh
+2026-10-20T17:50:09.155608+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T17:50:09.155676+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T17:55:02.327435+02:00 DESKTOP-1Q1LLS5 CRON[64872]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T17:55:02.329607+02:00 DESKTOP-1Q1LLS5 CRON[64872]: pam_unix(cron:session): session closed for user root
+2026-10-20T17:59:48.762685+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/chmod +x zad6.sh
+2026-10-20T17:59:48.776013+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T17:59:48.776104+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T18:05:03.217920+02:00 DESKTOP-1Q1LLS5 CRON[66734]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:05:03.219813+02:00 DESKTOP-1Q1LLS5 CRON[66734]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:15:03.485320+02:00 DESKTOP-1Q1LLS5 CRON[68564]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:15:03.487269+02:00 DESKTOP-1Q1LLS5 CRON[68564]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:17:03.505843+02:00 DESKTOP-1Q1LLS5 CRON[68926]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:17:03.507899+02:00 DESKTOP-1Q1LLS5 CRON[68926]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:23:38.192442+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/lista1 ; USER=root ; COMMAND=/usr/bin/apt install tree
+2026-10-20T18:23:38.197637+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-20T18:23:40.632686+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-20T18:25:03.572039+02:00 DESKTOP-1Q1LLS5 CRON[70497]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:25:03.573983+02:00 DESKTOP-1Q1LLS5 CRON[70497]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:35:03.180412+02:00 DESKTOP-1Q1LLS5 CRON[72301]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:35:03.182240+02:00 DESKTOP-1Q1LLS5 CRON[72301]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:45:03.484267+02:00 DESKTOP-1Q1LLS5 CRON[74025]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:45:03.486363+02:00 DESKTOP-1Q1LLS5 CRON[74025]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:55:03.875702+02:00 DESKTOP-1Q1LLS5 CRON[75760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-20T18:55:03.877822+02:00 DESKTOP-1Q1LLS5 CRON[75760]: pam_unix(cron:session): session closed for user root
+2026-10-20T18:56:37.547145+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: The system will power off now!
+2026-10-20T18:56:37.589164+02:00 DESKTOP-1Q1LLS5 systemd-logind[328]: System is powering down.
+2026-10-21T15:40:09.997286+02:00 DESKTOP-1Q1LLS5 systemd-logind[333]: New seat seat0.
+2026-10-21T15:40:10.022758+02:00 DESKTOP-1Q1LLS5 polkitd[321]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-21T15:40:10.023038+02:00 DESKTOP-1Q1LLS5 polkitd[321]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-21T15:40:10.026779+02:00 DESKTOP-1Q1LLS5 polkitd[321]: Finished loading, compiling and executing 6 rules
+2026-10-21T15:40:10.028884+02:00 DESKTOP-1Q1LLS5 polkitd[321]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-21T15:40:12.526479+02:00 DESKTOP-1Q1LLS5 login[822]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-21T15:40:12.526587+02:00 DESKTOP-1Q1LLS5 login[822]: PAM adding faulty module: pam_lastlog.so
+2026-10-21T15:40:12.807516+02:00 DESKTOP-1Q1LLS5 login[822]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-21T15:40:12.867468+02:00 DESKTOP-1Q1LLS5 systemd-logind[333]: New session 1 of user wztq.
+2026-10-21T15:40:12.879954+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-21T15:45:02.158141+02:00 DESKTOP-1Q1LLS5 CRON[2123]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T15:45:02.160370+02:00 DESKTOP-1Q1LLS5 CRON[2123]: pam_unix(cron:session): session closed for user root
+2026-10-21T15:55:02.573225+02:00 DESKTOP-1Q1LLS5 CRON[4085]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T15:55:02.575823+02:00 DESKTOP-1Q1LLS5 CRON[4085]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:05:02.783984+02:00 DESKTOP-1Q1LLS5 CRON[6370]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:05:02.786651+02:00 DESKTOP-1Q1LLS5 CRON[6370]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:15:02.363573+02:00 DESKTOP-1Q1LLS5 CRON[8594]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:15:02.365220+02:00 DESKTOP-1Q1LLS5 CRON[8594]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:17:03.266266+02:00 DESKTOP-1Q1LLS5 CRON[8990]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:17:03.269253+02:00 DESKTOP-1Q1LLS5 CRON[8990]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:25:02.930685+02:00 DESKTOP-1Q1LLS5 CRON[10467]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:25:02.932694+02:00 DESKTOP-1Q1LLS5 CRON[10467]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:27:22.257380+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:27:22.271435+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:27:46.146395+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:27:46.153001+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dis-upgrade
+2026-10-21T16:27:46.153678+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:27:46.157987+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:28:27.695276+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:28:27.711798+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:29:11.555454+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:29:11.561253+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:29:11.561882+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:35:02.959184+02:00 DESKTOP-1Q1LLS5 CRON[12947]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:35:02.961185+02:00 DESKTOP-1Q1LLS5 CRON[12947]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:37:43.092082+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:37:52.470940+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:37:52.471468+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:38:26.236724+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:38:26.242270+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:38:26.242828+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:42:01.970885+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:42:01.999728+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:42:02.000367+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:42:03.453438+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:42:27.640539+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:42:27.641075+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:42:57.684806+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:42:57.695708+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:42:57.697354+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:42:58.266581+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:43:31.786405+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:43:31.786956+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:43:59.281046+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:43:59.292480+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:43:59.294100+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:43:59.803415+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:43:59.808832+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt autoremove
+2026-10-21T16:43:59.809491+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:44:17.392975+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:44:34.630723+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-21T16:44:34.635210+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:45:02.731644+02:00 DESKTOP-1Q1LLS5 CRON[27401]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:45:02.734454+02:00 DESKTOP-1Q1LLS5 CRON[27401]: pam_unix(cron:session): session closed for user root
+2026-10-21T16:45:20.989207+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:45:20.998047+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt autoremove
+2026-10-21T16:45:20.998580+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:45:21.545408+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:45:21.551003+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-21T16:45:21.551738+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:45:22.185210+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:50:19.360025+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/chmod +x newscrip.sh
+2026-10-21T16:50:19.364699+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:50:19.364755+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:52:28.240118+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/chmod +x newscript.sh
+2026-10-21T16:52:28.240644+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:52:28.242414+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:53:42.194902+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/chmod +x script.sh
+2026-10-21T16:53:42.195441+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T16:53:42.197133+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T16:55:03.542225+02:00 DESKTOP-1Q1LLS5 CRON[29588]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T16:55:03.544384+02:00 DESKTOP-1Q1LLS5 CRON[29588]: pam_unix(cron:session): session closed for user root
+2026-10-21T17:03:23.678541+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp ; USER=root ; COMMAND=/usr/bin/find / -type d -name logfiles
+2026-10-21T17:03:23.684170+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-21T17:04:10.201930+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-21T17:05:03.301670+02:00 DESKTOP-1Q1LLS5 CRON[31417]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T17:05:03.303564+02:00 DESKTOP-1Q1LLS5 CRON[31417]: pam_unix(cron:session): session closed for user root
+2026-10-21T17:06:31.137436+02:00 DESKTOP-1Q1LLS5 systemd-logind[333]: The system will power off now!
+2026-10-21T17:06:31.147303+02:00 DESKTOP-1Q1LLS5 systemd-logind[333]: System is powering down.
+2026-10-21T17:46:17.590900+02:00 DESKTOP-1Q1LLS5 systemd-logind[327]: New seat seat0.
+2026-10-21T17:46:17.642041+02:00 DESKTOP-1Q1LLS5 polkitd[322]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-21T17:46:17.642298+02:00 DESKTOP-1Q1LLS5 polkitd[322]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-21T17:46:17.645287+02:00 DESKTOP-1Q1LLS5 polkitd[322]: Finished loading, compiling and executing 6 rules
+2026-10-21T17:46:17.646129+02:00 DESKTOP-1Q1LLS5 polkitd[322]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-21T17:46:19.985674+02:00 DESKTOP-1Q1LLS5 login[721]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-21T17:46:19.985778+02:00 DESKTOP-1Q1LLS5 login[721]: PAM adding faulty module: pam_lastlog.so
+2026-10-21T17:46:20.253121+02:00 DESKTOP-1Q1LLS5 login[721]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-21T17:46:20.331316+02:00 DESKTOP-1Q1LLS5 systemd-logind[327]: New session 1 of user wztq.
+2026-10-21T17:46:20.344000+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-21T17:55:02.552112+02:00 DESKTOP-1Q1LLS5 CRON[911]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T17:55:02.554293+02:00 DESKTOP-1Q1LLS5 CRON[911]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:05:02.666833+02:00 DESKTOP-1Q1LLS5 CRON[934]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:05:02.669856+02:00 DESKTOP-1Q1LLS5 CRON[934]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:15:02.430995+02:00 DESKTOP-1Q1LLS5 CRON[950]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:15:02.433024+02:00 DESKTOP-1Q1LLS5 CRON[950]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:17:03.392116+02:00 DESKTOP-1Q1LLS5 CRON[956]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:17:03.404998+02:00 DESKTOP-1Q1LLS5 CRON[956]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:25:03.538544+02:00 DESKTOP-1Q1LLS5 CRON[1023]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:25:03.540393+02:00 DESKTOP-1Q1LLS5 CRON[1023]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:35:02.777941+02:00 DESKTOP-1Q1LLS5 CRON[1045]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:35:02.780289+02:00 DESKTOP-1Q1LLS5 CRON[1045]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:45:02.795874+02:00 DESKTOP-1Q1LLS5 CRON[1167]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:45:02.798105+02:00 DESKTOP-1Q1LLS5 CRON[1167]: pam_unix(cron:session): session closed for user root
+2026-10-21T18:55:02.349084+02:00 DESKTOP-1Q1LLS5 CRON[1206]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T18:55:02.351103+02:00 DESKTOP-1Q1LLS5 CRON[1206]: pam_unix(cron:session): session closed for user root
+2026-10-21T19:05:03.158089+02:00 DESKTOP-1Q1LLS5 CRON[1224]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T19:05:03.159918+02:00 DESKTOP-1Q1LLS5 CRON[1224]: pam_unix(cron:session): session closed for user root
+2026-10-21T19:15:03.711482+02:00 DESKTOP-1Q1LLS5 CRON[1240]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T19:15:03.713953+02:00 DESKTOP-1Q1LLS5 CRON[1240]: pam_unix(cron:session): session closed for user root
+2026-10-21T19:17:02.860158+02:00 DESKTOP-1Q1LLS5 CRON[1246]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-21T19:17:02.862396+02:00 DESKTOP-1Q1LLS5 CRON[1246]: pam_unix(cron:session): session closed for user root
+2026-10-21T19:21:37.316711+02:00 DESKTOP-1Q1LLS5 systemd-logind[327]: The system will power off now!
+2026-10-21T19:21:37.353813+02:00 DESKTOP-1Q1LLS5 systemd-logind[327]: System is powering down.
+2026-10-22T15:49:52.064645+02:00 DESKTOP-1Q1LLS5 systemd-logind[339]: New seat seat0.
+2026-10-22T15:49:52.138932+02:00 DESKTOP-1Q1LLS5 polkitd[325]: Loading rules from directory /etc/polkit-1/rules.d
+2026-10-22T15:49:52.139144+02:00 DESKTOP-1Q1LLS5 polkitd[325]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-10-22T15:49:52.143371+02:00 DESKTOP-1Q1LLS5 polkitd[325]: Finished loading, compiling and executing 6 rules
+2026-10-22T15:49:52.144925+02:00 DESKTOP-1Q1LLS5 polkitd[325]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-10-22T15:49:54.588539+02:00 DESKTOP-1Q1LLS5 login[819]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-10-22T15:49:54.588648+02:00 DESKTOP-1Q1LLS5 login[819]: PAM adding faulty module: pam_lastlog.so
+2026-10-22T15:49:54.867915+02:00 DESKTOP-1Q1LLS5 login[819]: pam_unix(login:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-22T15:49:54.935251+02:00 DESKTOP-1Q1LLS5 systemd-logind[339]: New session 1 of user wztq.
+2026-10-22T15:49:54.948992+02:00 DESKTOP-1Q1LLS5 (systemd): pam_unix(systemd-user:session): session opened for user wztq(uid=1000) by wztq(uid=0)
+2026-10-22T15:55:01.953873+02:00 DESKTOP-1Q1LLS5 CRON[2105]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-22T15:55:01.956262+02:00 DESKTOP-1Q1LLS5 CRON[2105]: pam_unix(cron:session): session closed for user root
+2026-10-22T16:05:01.978300+02:00 DESKTOP-1Q1LLS5 CRON[4119]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-22T16:05:01.983427+02:00 DESKTOP-1Q1LLS5 CRON[4119]: pam_unix(cron:session): session closed for user root
+2026-10-22T16:07:32.386867+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/mv script.sh ..
+2026-10-22T16:07:32.396541+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:07:32.396605+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:15:01.438723+02:00 DESKTOP-1Q1LLS5 CRON[6244]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-22T16:15:01.453631+02:00 DESKTOP-1Q1LLS5 CRON[6244]: pam_unix(cron:session): session closed for user root
+2026-10-22T16:17:01.449247+02:00 DESKTOP-1Q1LLS5 CRON[6639]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-22T16:17:01.453739+02:00 DESKTOP-1Q1LLS5 CRON[6639]: pam_unix(cron:session): session closed for user root
+2026-10-22T16:25:01.462017+02:00 DESKTOP-1Q1LLS5 CRON[8185]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-22T16:25:01.463954+02:00 DESKTOP-1Q1LLS5 CRON[8185]: pam_unix(cron:session): session closed for user root
+2026-10-22T16:27:40.095027+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/mv update.sh update.sh /usr/local/bin/update
+2026-10-22T16:27:40.112987+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:27:40.113053+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:28:31.912351+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/mv update.sh /usr/local/bin/update
+2026-10-22T16:28:31.913141+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:28:31.915120+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:29:05.641394+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/chown root:root
+2026-10-22T16:29:05.641920+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:29:05.653050+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:29:19.932428+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/chown root:root usr/local/bin/update
+2026-10-22T16:29:19.932979+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:29:19.934879+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:29:28.770976+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/chown root:root /usr/local/bin/update
+2026-10-22T16:29:28.771565+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:29:28.773567+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:31:18.758110+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-22T16:31:18.762648+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:31:22.234278+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:31:22.240287+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/apt autoremove
+2026-10-22T16:31:22.240869+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:31:22.810357+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:31:22.815925+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-10-22T16:31:22.816523+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:31:36.202663+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
+2026-10-22T16:33:28.689214+02:00 DESKTOP-1Q1LLS5 sudo:     wztq : TTY=pts/0 ; PWD=/home/wztq/studia/sem7/sp/sandbox ; USER=root ; COMMAND=/usr/bin/chmod +x script.sh
+2026-10-22T16:33:28.691046+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-22T16:33:28.693028+02:00 DESKTOP-1Q1LLS5 sudo: pam_unix(sudo:session): session closed for user root
