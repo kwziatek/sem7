@@ -1,29 +1,12 @@
 #!/bin/bash
 
-path=logfiles/
+if [ $# -ne 1 ] 
+then
+    echo "The correct exectution is: $0 path_name"
+    echo "Please provide EXCATLY one argument"
+    exit 1
+fi
 
-rm $path/*
-cp /var/log/*.log $path
+lines=$(ls -lh $1 | wc -l)
 
-counter=1
-
-for file in $path*
-do
-    if command -v *tar*
-    then
-        echo "Zip $file is being deleted"
-        rm $file
-    else
-        echo "File is being replaced"
-        mv $file $path$counter.log
-        echo $file
-        ((counter++))
-    fi
-
-done
-
-for file in $path*
-do
-    echo $file
-
-done
+echo "There is $((lines-1)) objects in the $1 directory"
