@@ -1,0 +1,89 @@
+(19:14:29)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #Karol Wziątek 279734 - konsola 2
+(19:14:46)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn checkout https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/list
+a2/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion
+ Repository
+Password for '279734': *******
+
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+kf.windowsystem: Cannot use KWindowSystem without a QGuiApplicati
+on
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+A    lista2/zad1
+A    lista2/zad1/file.txt
+Checked out revision 92.
+(19:14:54)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ cd lista2/zad1/
+(19:15:26)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ cat file.txt
+File is used for demonstrating conflict-solving.(19:15:33)-(wztq)
+-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1)
+ $ #zmiana pliku - tworzenie konfliktu
+(19:15:53)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ code file.txt
+(19:15:59)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ cat file.txt
+File is used for demonstrating conflict-solving.
+Let's create a conflict here.(19:16:34)-(wztq)-(~/studia/sem7/sp/
+svn_kopia_robocza/lista2/zad1)
+ $ svn commit -m "zmiana pliku w drugiej kopii roboczej"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion
+ Repository
+Password for '279734': *******
+
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+kf.windowsystem: Cannot use KWindowSystem without a QGuiApplicati
+on
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Error.
+Spawn.ChildSignaled", "Process org.kde.kwalletd5 received signal
+6")
+Sending        file.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 93.
+(19:17:19)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ tmux caputre-pane -pS - > log.txt
+unknown command: caputre-pane
+(19:29:03)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ tmux capture-pane -pS - > log.txt
+(19:29:16)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad1
+)
+ $ tmux capture-pane -pS - > konsola2_log.txt
+

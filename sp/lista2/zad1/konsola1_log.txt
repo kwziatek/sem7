@@ -1,0 +1,160 @@
+(19:11:33)-(wztq)-(~/studia/sem7/sp)
+ $ #Karol Wziątek 279734 - konsola 1
+(19:11:45)-(wztq)-(~/studia/sem7/sp)
+ $ svn checkout https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/l
+ista2/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subvers
+ion Repository
+Password for '279734': *******
+
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+kf.windowsystem: Cannot use KWindowSystem without a QGuiApplic
+ation
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Checked out revision 92.
+(19:11:52)-(wztq)-(~/studia/sem7/sp)
+ $ cd lista2/zad1/
+(19:18:12)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt
+File is used for demonstrating conflict-solving.(19:18:14)-(wz
+tq)-(~/studia/sem7/sp/lista2/zad1)
+ $ #zmiana pliku - tworzenie konfliktu
+(19:18:31)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ code file.txt
+(19:18:50)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt
+File is used for demonstrating conflict-solving.
+Conflict is being created right here.(19:19:01)-(wztq)-(~/stud
+ia/sem7/sp/lista2/zad1)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subvers
+ion Repository
+Password for '279734': *******
+
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+kf.windowsystem: Cannot use KWindowSystem without a QGuiApplic
+ation
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+C    file.txt
+Updated to revision 93.
+Summary of conflicts:
+  Text conflicts: 1
+Merge conflict discovered in file 'file.txt'.
+Select: (p) Postpone, (df) Show diff, (e) Edit file, (m) Merge
+,
+        (s) Show all options: p
+Summary of conflicts:
+  Text conflicts: 1
+(19:20:01)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ ls
+file.txt  file.txt.mine  file.txt.r92  file.txt.r93
+(19:20:20)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt
+<<<<<<< .mine
+File is used for demonstrating conflict-solving.
+Conflict is being created right here.||||||| .r92
+File is used for demonstrating conflict-solving.=======
+File is used for demonstrating conflict-solving.
+Let's create a conflict here.>>>>>>> .r93
+(19:20:31)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt.mine
+File is used for demonstrating conflict-solving.
+Conflict is being created right here.(19:20:47)-(wztq)-(~/stud
+ia/sem7/sp/lista2/zad1)
+ $ cat file.txt.r92
+File is used for demonstrating conflict-solving.(19:20:55)-(wz
+tq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txtr93
+cat: file.txtr93: No such file or directory
+(19:21:02)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt.93
+cat: file.txt.93: No such file or directory
+(19:21:10)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt
+file.txt       file.txt.mine  file.txt.r92   file.txt.r93
+(19:21:10)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt.r93
+File is used for demonstrating conflict-solving.
+Let's create a conflict here.(19:21:29)-(wztq)-(~/studia/sem7/
+sp/lista2/zad1)
+ $ #rozwiązywanie konfliktu - edycja pliku file.txt tak żeby z
+awierał pożądaną treść oraz usuwanie znaczników SVN
+(19:23:11)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ code file.txt
+(19:23:16)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ cat file.txt
+Conflict has been solved.
+(19:23:31)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ #zgłoszenie svn'owi, że konflikt został rozwiązany
+(19:24:19)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ svn resolve --accept working file.txt
+Merge conflicts in 'file.txt' marked as resolved.
+(19:24:38)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ svn status
+M       file.txt
+(19:25:05)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ svn commit -m "conflict solved!"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subvers
+ion Repository
+Password for '279734': *******
+
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+kf.windowsystem: Cannot use KWindowSystem without a QGuiApplic
+ation
+Couldn't start kwalletd:  QDBusError("org.freedesktop.DBus.Err
+or.Spawn.ChildSignaled", "Process org.kde.kwalletd5 received s
+ignal 6")
+Sending        file.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 94.
+(19:25:18)-(wztq)-(~/studia/sem7/sp/lista2/zad1)
+ $ tmux capture-pane -pS - > konsola1_log.txt
+

@@ -1,0 +1,192 @@
+karol@karol-ThinkPad-P52:~/studia/sem7/sp$ ls
+lista1_local  sandbox
+karol@karol-ThinkPad-P52:~/studia/sem7/sp$ svn export https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista1/
+A    lista1
+A    lista1/a
+A    lista1/a/a
+A    lista1/a/a/b
+A    lista1/a/aa
+A    lista1/a/aa/b
+A    lista1/a/aaa
+A    lista1/a/aaa/b
+A    lista1/a/aab
+A    lista1/a/aab/b
+A    lista1/a/ab
+A    lista1/a/ab/b
+A    lista1/a/aba
+A    lista1/a/aba/b
+A    lista1/a/abb
+A    lista1/a/abb/b
+A    lista1/a/b
+A    lista1/a/b/b
+A    lista1/a/ba
+A    lista1/a/ba/b
+A    lista1/a/baa
+A    lista1/a/baa/b
+A    lista1/a/bab
+A    lista1/a/bab/b
+A    lista1/a/bb
+A    lista1/a/bb/b
+A    lista1/a/bba
+A    lista1/a/bba/b
+A    lista1/a/bbb
+A    lista1/a/bbb/b
+A    lista1/test_data
+A    lista1/a/a/b/aab
+A    lista1/a/aa/b/aaab
+A    lista1/a/aaa/b/aaaab
+A    lista1/a/aab/b/aaabb
+A    lista1/a/ab/b/aabb
+A    lista1/a/aba/b/aabab
+A    lista1/a/abb/b/aabbb
+A    lista1/a/b/ab
+A    lista1/a/b/b/abb
+A    lista1/a/ba/b/abab
+A    lista1/a/baa/b/abaab
+A    lista1/a/bab/b/ababb
+A    lista1/a/bb/b/abbb
+A    lista1/a/bba/b/abbab
+A    lista1/a/bbb/b/abbbb
+A    lista1/test_data/test.txt
+A    lista1/zad1.sh
+A    lista1/zad2.sh
+A    lista1/zad3.sh
+A    lista1/zad4.sh
+A    lista1/zad5.sh
+A    lista1/zad6.sh
+Wyeksportowano wersję 88.
+karol@karol-ThinkPad-P52:~/studia/sem7/sp$ cd lista1
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ls
+a  test_data  zad1.sh  zad2.sh  zad3.sh  zad4.sh  zad5.sh  zad6.sh
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad1.sh a
+a/a/b/aab
+a/ba/b/abab
+a/bbb/b/abbbb
+a/aa/b/aaab
+a/bb/b/abbb
+a/bab/b/ababb
+a/baa/b/abaab
+a/bba/b/abbab
+a/aab/b/aaabb
+a/ab/b/aabb
+a/aaa/b/aaaab
+a/abb/b/aabbb
+a/b/ab
+a/b/b/abb
+a/aba/b/aabab
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad2.sh a
+     10 b
+     10 A
+      6 Ab
+      3 bb
+      3 AA
+      2 Abb
+      2 AAb
+      1 bbb
+      1 bAb
+      1 Abbbb
+      1 AbbAb
+      1 AbAbb
+      1 AbAAb
+      1 AbA
+      1 AAbbb
+      1 AAbAb
+      1 AAAbb
+      1 AAAAb
+      1 AAA
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad3.sh a
+      7 b
+      7 A
+      5 Ab
+      3 bb
+      3 AA
+      2 Abb
+      2 AAb
+      1 bbb
+      1 bAb
+      1 Abbbb
+      1 AbbAb
+      1 AbAbb
+      1 AbAAb
+      1 AbA
+      1 AAbbb
+      1 AAbAb
+      1 AAAbb
+      1 AAAAb
+      1 AAA
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad4.sh a
+Słowo: AA | Plik: a/a/b/aab | Linia: AA  b
+Słowo: b | Plik: a/a/b/aab | Linia: AA  b
+Słowo: A | Plik: a/a/b/aab | Linia: A A b
+Słowo: A | Plik: a/a/b/aab | Linia: A A b
+Słowo: b | Plik: a/a/b/aab | Linia: A A b
+Słowo: A | Plik: a/a/b/aab | Linia: A  Ab
+Słowo: Ab | Plik: a/a/b/aab | Linia: A  Ab
+Słowo: AbA | Plik: a/ba/b/abab | Linia: AbA b
+Słowo: b | Plik: a/ba/b/abab | Linia: AbA b
+Słowo: Ab | Plik: a/ba/b/abab | Linia: Ab Ab
+Słowo: Ab | Plik: a/ba/b/abab | Linia: Ab Ab
+Słowo: A | Plik: a/ba/b/abab | Linia: A bAb
+Słowo: bAb | Plik: a/ba/b/abab | Linia: A bAb
+Słowo: Abbbb | Plik: a/bbb/b/abbbb | Linia: Abbbb
+Słowo: AAA | Plik: a/aa/b/aaab | Linia: AAA b
+Słowo: b | Plik: a/aa/b/aaab | Linia: AAA b
+Słowo: AA | Plik: a/aa/b/aaab | Linia: AA Ab
+Słowo: Ab | Plik: a/aa/b/aaab | Linia: AA Ab
+Słowo: A | Plik: a/aa/b/aaab | Linia: A AAb
+Słowo: AAb | Plik: a/aa/b/aaab | Linia: A AAb
+Słowo: Abb | Plik: a/bb/b/abbb | Linia: Abb b
+Słowo: b | Plik: a/bb/b/abbb | Linia: Abb b
+Słowo: Ab | Plik: a/bb/b/abbb | Linia: Ab bb
+Słowo: bb | Plik: a/bb/b/abbb | Linia: Ab bb
+Słowo: A | Plik: a/bb/b/abbb | Linia: A bbb
+Słowo: bbb | Plik: a/bb/b/abbb | Linia: A bbb
+Słowo: AbAbb | Plik: a/bab/b/ababb | Linia: AbAbb
+Słowo: AbAAb | Plik: a/baa/b/abaab | Linia: AbAAb
+Słowo: AbbAb | Plik: a/bba/b/abbab | Linia: AbbAb
+Słowo: AAAbb | Plik: a/aab/b/aaabb | Linia: AAAbb
+Słowo: AAb | Plik: a/ab/b/aabb | Linia: AAb b
+Słowo: b | Plik: a/ab/b/aabb | Linia: AAb b
+Słowo: AA | Plik: a/ab/b/aabb | Linia: AA bb
+Słowo: bb | Plik: a/ab/b/aabb | Linia: AA bb
+Słowo: A | Plik: a/ab/b/aabb | Linia: A Abb
+Słowo: Abb | Plik: a/ab/b/aabb | Linia: A Abb
+Słowo: AAAAb | Plik: a/aaa/b/aaaab | Linia: AAAAb
+Słowo: AAbbb | Plik: a/abb/b/aabbb | Linia: AAbbb
+Słowo: A | Plik: a/b/ab | Linia: A   b
+Słowo: b | Plik: a/b/ab | Linia: A   b
+Słowo: Ab | Plik: a/b/b/abb | Linia: Ab  b
+Słowo: b | Plik: a/b/b/abb | Linia: Ab  b
+Słowo: A | Plik: a/b/b/abb | Linia: A b b
+Słowo: b | Plik: a/b/b/abb | Linia: A b b
+Słowo: b | Plik: a/b/b/abb | Linia: A b b
+Słowo: A | Plik: a/b/b/abb | Linia: A  bb
+Słowo: bb | Plik: a/b/b/abb | Linia: A  bb
+Słowo: AAbAb | Plik: a/aba/b/aabab | Linia: AAbAb
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad5.sh a
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad6.sh a
+Słowo: "A" | Plik: a/a/b/aab | Wiersz: A A b
+Słowo: "Ab" | Plik: a/ba/b/abab | Wiersz: Ab Ab
+Słowo: "b" | Plik: a/b/b/abb | Wiersz: A b b
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ ./zad2.sh a
+     10 b
+     10 A
+      6 Ab
+      3 bb
+      3 AA
+      2 Abb
+      2 AAb
+      1 bbb
+      1 bAb
+      1 Abbbb
+      1 AbbAb
+      1 AbAbb
+      1 AbAAb
+      1 AbA
+      1 AAbbb
+      1 AAbAb
+      1 AAAbb
+      1 AAAAb
+      1 AAA
+karol@karol-ThinkPad-P52:~/studia/sem7/sp/lista1$ tmux capture-pane -S - -E - -p > log.txt
+
