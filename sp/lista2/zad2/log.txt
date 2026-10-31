@@ -1,0 +1,114 @@
+(18:21:57)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #Karol Wziątek - 279734
+(18:22:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #tworzę pelna kopię robocza zaczynajac od korzenia 'lista2'
+(18:22:38)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn checkout https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+A    lista2/zad1
+A    lista2/zad2
+A    lista2/zad1/file.txt
+A    lista2/zad1/konsola1_log.txt
+A    lista2/zad1/konsola2_log.txt
+A    lista2/zad2/file.txt
+Checked out revision 96.
+(18:22:48)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tree
+.
+└── lista2
+    ├── zad1
+    │   ├── file.txt
+    │   ├── konsola1_log.txt
+    │   └── konsola2_log.txt
+    └── zad2
+        └── file.txt
+
+4 directories, 4 files
+(18:22:51)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ # zauwazmy, ze bezposrednio w 'lista2' nie ma zadnych plikow
+(18:23:13)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ rm -rf lista2/
+(18:23:21)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn checkout https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/ --depth empty
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Checked out revision 96.
+(18:23:36)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tree
+.
+└── lista2
+
+2 directories, 0 files
+(18:23:40)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ # stworzylem pusta kopie robocza
+(18:23:51)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ # teraz uzyje svn update z glebokoscia files, zeby pobrac pliki, ktore znajduja sie bezposrednio w korzeniu
+(18:24:25)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn update --set-depth files lista2/
+Updating 'lista2':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+At revision 96.
+(18:24:37)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tree
+.
+└── lista2
+
+2 directories, 0 files
+(18:24:40)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #dalej pusto - dlaczego? Dlatego, ze tak jak pokazywalem wczesniej, bezposrednio w lista2 nie ma zadnych plikow
+(18:25:12)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #teraz svn update z glebokoscia immediates
+(18:25:35)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn update --set-depth immediates lista2/
+Updating 'lista2':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+A    lista2/zad1
+A    lista2/zad2
+Updated to revision 96.
+(18:25:47)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tree
+.
+└── lista2
+    ├── zad1
+    └── zad2
+
+4 directories, 0 files
+(18:25:50)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ # teraz widac cala sciezke podkatalogow, ale bez plikow
+(18:26:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ # i na koniec svn update z glebokoscia infinity
+(18:26:18)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ svn update --set-depth infinity lista2/
+Updating 'lista2':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+A    lista2/zad1/file.txt
+A    lista2/zad1/konsola1_log.txt
+A    lista2/zad1/konsola2_log.txt
+A    lista2/zad2/file.txt
+Updated to revision 96.
+(18:26:26)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tree
+.
+└── lista2
+    ├── zad1
+    │   ├── file.txt
+    │   ├── konsola1_log.txt
+    │   └── konsola2_log.txt
+    └── zad2
+        └── file.txt
+
+4 directories, 4 files
+(18:26:28)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ #widac cale drzewo
+(18:26:35)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza)
+ $ tmux capture-pane -pS - > log.txt
+

@@ -1,0 +1,121 @@
+(14:11:37)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #Karol Wziatek 279734 - konsola 1
+(14:11:53)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ ls
+file.txt
+(14:12:04)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+(14:12:07)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ # stworzylem prosty plik tekstowy, nakladam na niego blokade
+(14:12:24)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn lock file.txt -m "nakladanie blokady"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' locked by user '279734'.
+(14:12:38)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status
+     K  file.txt
+(14:13:58)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #odblokowuje file.txt
+(14:16:51)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn unlock file.txt
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' unlocked.
+(14:16:57)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #nakladam blokade po raz kolejny, zeby przetestowac zrywanie blokady przez 2. kopie robocza
+(14:18:15)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn lock file.txt "ponowne nakladnie blokady"
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista2/zad5/ponowne nakladnie blokady' was not found.
+(14:18:27)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn lock file.txt -m "ponowne nakladnie blokady"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+svn: warning: W160042: Lock failed: newer version of '/sp/lista2/zad5/file.txt' exists
+svn: E200009: One or more locks could not be obtained
+(14:18:35)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+U    file.txt
+Updated to revision 111.
+(14:18:48)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn lock file.txt -m "ponowne nakladnie blokady"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' locked by user '279734'.
+(14:18:54)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #w konsoli 2 blokada zostala zerwana, sprawdzam status
+(14:21:35)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status -u
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+     B  *      111   file.txt
+Status against revision:    112
+(14:21:42)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #jak widac, blokada zostala zerwana (B) i zdalne repo ma juz wersje o jedna nowsza niz wersja lokalna
+(14:22:35)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+U B  file.txt
+Updated to revision 112.
+(14:22:39)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #nakladam ponownie blokade, zeby przetestowac przejmowanie blokady
+(14:23:08)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn lock file.txt
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' locked by user '279734'.
+(14:23:15)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #blokada zostala przejeta przez konsole 2, sprawdzam status
+(14:26:09)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status -u
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+     T         112   file.txt
+Status against revision:    112
+(14:26:18)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #T ozncza, ze blokada zostala przejeta (sTolen)
+(14:26:38)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status
+     K  file.txt
+(14:28:21)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status -u
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+     B  *      112   file.txt
+Status against revision:    113
+(14:28:27)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+U B  file.txt
+Updated to revision 113.
+(14:28:47)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ svn status -u
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Status against revision:    113
+(14:28:53)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ #przed wyslanie commita z konsoli 2, czyli tutaj status T, powinienem byl pokazac, ze nie moge stad puscic commita, przegapilem te
+n moment... testowalem wczesniej i wiem, ze dziala tak, jak powinno ;)
+(14:30:32)-(wztq)-(~/studia/sem7/sp/lista2/zad5)
+ $ tmux capture-pane -pS - > konsola1_log.txt
+

@@ -1,0 +1,123 @@
+(14:14:12)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #Karol Wziatek 279734 - konsola 2
+(14:14:18)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+At revision 110.
+(14:14:26)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ ls
+file.txt
+(14:14:51)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+ (14:14:53)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #edytuje zablokowany plik
+(14:15:03)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+Editing locked file...
+ (14:15:20)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #probuje wyslac commita ze zmianami
+(14:15:39)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn commit -m "zmiany za zablokowanym pliku"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Sending        file.txt
+Transmitting file data .svn: E195022: Commit failed (details follow):
+svn: E195022: File '/home/wztq/studia/sem7/sp/svn_kopia_robocza/lista2/zad5/file.txt' is locked in another working copy
+svn: E160038: While preparing '/home/wztq/studia/sem7/sp/svn_kopia_robocza/lista2/zad5/file.txt' for commit
+svn: E160038: '/279734-dir/mk1/!svn/txr/110-3w/sp/lista2/zad5/file.txt': no lock token available
+(14:15:56)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #jak widac, blokada uniemozliwila commit zmian
+(14:16:24)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #w konsoli 1 odblokowalem plik file.txt, probuje commitowac ponownie
+(14:17:23)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn commit -m "zmiany za zablokowanym pliku"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Sending        file.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 111.
+(14:17:30)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #udalo sie, to znaczy, ze blokada zostala pomyslnie zdjeta
+(14:17:47)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #w konsoli 1 ponownie zablokowalem file.txt, przetestuje teraz unlock --force
+(14:19:30)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn unlock --force file.txt
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' unlocked.
+(14:19:39)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn status
+M       file.txt
+(14:20:19)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+Editing locked file...
+Editing file after forcing the unlock.(14:20:22)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn commit -m "commit zmian po zerwaniu blokady przez konsole 2"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Sending        file.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 112.
+(14:20:44)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #jak widac, udalo sie zerwac blokade i wyslac zmiany do zdalnego repo
+(14:21:13)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #blokada zostala ponownie nalozona w konsoli 1
+(14:23:50)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn status -u
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+     O         112   file.txt
+Status against revision:    112
+(14:23:56)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ # O mowi o tym ze ktos inny (Other) nalozyl blokade
+(14:24:58)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ # przejmuje blokade
+(14:25:10)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn lock --force file.txt -m "przejmowanie blokady"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+'file.txt' locked by user '279734'.
+(14:25:30)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn status
+     K  file.txt
+(14:25:36)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #widzimy, ze file.txt jest zablokowany przez te kopie robocza
+(14:25:55)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #dokonam zmian i wysle commita
+(14:26:59)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+Editing locked file...
+Editing file after forcing the unlock.(14:27:01)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ cat file.txt
+This is file serves a purpose of demonstrating svn locks.
+Editing locked file...
+Editing file after forcing the unlock.
+Editing file after stealing the lock.(14:27:25)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ svn commit -m "wysylanie zmian po przejeciu blokady"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Sending        file.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 113.
+(14:27:39)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ #udalo sie wyslac commita
+(14:28:00)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2/zad5)
+ $ tmux capture-pane -pS - > konsola2_log.txt
+

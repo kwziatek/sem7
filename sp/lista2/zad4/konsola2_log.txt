@@ -1,0 +1,237 @@
+(20:12:24)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn co https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/zad4/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+ U   zad4
+
+Fetching external item into 'zad4/externals':
+A    zad4/externals/a
+A    zad4/externals/a/a
+A    zad4/externals/a/a/b
+A    zad4/externals/a/aa
+A    zad4/externals/a/aa/b
+A    zad4/externals/a/aaa
+A    zad4/externals/a/aaa/b
+A    zad4/externals/a/aab
+A    zad4/externals/a/aab/b
+A    zad4/externals/a/ab
+A    zad4/externals/a/ab/b
+A    zad4/externals/a/aba
+A    zad4/externals/a/aba/b
+A    zad4/externals/a/abb
+A    zad4/externals/a/abb/b
+A    zad4/externals/a/b
+A    zad4/externals/a/b/b
+A    zad4/externals/a/ba
+A    zad4/externals/a/ba/b
+A    zad4/externals/a/baa
+A    zad4/externals/a/baa/b
+A    zad4/externals/a/bab
+A    zad4/externals/a/bab/b
+A    zad4/externals/a/bb
+A    zad4/externals/a/bb/b
+A    zad4/externals/a/bba
+A    zad4/externals/a/bba/b
+A    zad4/externals/a/bbb
+A    zad4/externals/a/bbb/b
+A    zad4/externals/a/a/b/aab
+A    zad4/externals/a/aa/b/aaab
+A    zad4/externals/a/aaa/b/aaaab
+A    zad4/externals/a/aab/b/aaabb
+A    zad4/externals/a/ab/b/aabb
+A    zad4/externals/a/aba/b/aabab
+A    zad4/externals/a/abb/b/aabbb
+A    zad4/externals/a/b/ab
+A    zad4/externals/a/b/b/abb
+A    zad4/externals/a/ba/b/abab
+A    zad4/externals/a/baa/b/abaab
+A    zad4/externals/a/bab/b/ababb
+A    zad4/externals/a/bb/b/abbb
+A    zad4/externals/a/bba/b/abbab
+A    zad4/externals/a/bbb/b/abbbb
+Checked out external at revision 29.
+
+Checked out revision 105.
+(20:12:45)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ # na kopii roboczej svn co pobiera rowniez zewnetrzne zrodla
+(20:13:08)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ ls
+zad1  zad2  zad4
+(20:13:18)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ rm -rf zad4/
+(20:13:26)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn co https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/zad4/ -ignore-externals
+svn: invalid option character: i
+Type 'svn help' for usage.
+(20:13:51)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn co https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/zad4/ --ignore-externals
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+ U   zad4
+Checked out revision 105.
+(20:14:03)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ tree
+.
+├── zad1
+│   ├── file.txt
+│   ├── konsola1_log.txt
+│   └── konsola2_log.txt
+├── zad2
+│   └── file.txt
+└── zad4
+
+4 directories, 4 files
+(20:14:06)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ # opcja --ignore-externals ignoruje zewnetrzne referencje
+(20:14:26)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn up zad4/
+Updating 'zad4':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+
+Fetching external item into 'zad4/externals':
+A    zad4/externals/a
+A    zad4/externals/a/a
+A    zad4/externals/a/a/b
+A    zad4/externals/a/aa
+A    zad4/externals/a/aa/b
+A    zad4/externals/a/aaa
+A    zad4/externals/a/aaa/b
+A    zad4/externals/a/aab
+A    zad4/externals/a/aab/b
+A    zad4/externals/a/ab
+A    zad4/externals/a/ab/b
+A    zad4/externals/a/aba
+A    zad4/externals/a/aba/b
+A    zad4/externals/a/abb
+A    zad4/externals/a/abb/b
+A    zad4/externals/a/b
+A    zad4/externals/a/b/b
+A    zad4/externals/a/ba
+A    zad4/externals/a/ba/b
+A    zad4/externals/a/baa
+A    zad4/externals/a/baa/b
+A    zad4/externals/a/bab
+A    zad4/externals/a/bab/b
+A    zad4/externals/a/bb
+A    zad4/externals/a/bb/b
+A    zad4/externals/a/bba
+A    zad4/externals/a/bba/b
+A    zad4/externals/a/bbb
+A    zad4/externals/a/bbb/b
+A    zad4/externals/a/a/b/aab
+A    zad4/externals/a/aa/b/aaab
+A    zad4/externals/a/aaa/b/aaaab
+A    zad4/externals/a/aab/b/aaabb
+A    zad4/externals/a/ab/b/aabb
+A    zad4/externals/a/aba/b/aabab
+A    zad4/externals/a/abb/b/aabbb
+A    zad4/externals/a/b/ab
+A    zad4/externals/a/b/b/abb
+A    zad4/externals/a/ba/b/abab
+A    zad4/externals/a/baa/b/abaab
+A    zad4/externals/a/bab/b/ababb
+A    zad4/externals/a/bb/b/abbb
+A    zad4/externals/a/bba/b/abbab
+A    zad4/externals/a/bbb/b/abbbb
+Updated external to revision 29.
+
+At revision 105.
+(20:14:50)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ tree
+.
+├── zad1
+│   ├── file.txt
+│   ├── konsola1_log.txt
+│   └── konsola2_log.txt
+├── zad2
+│   └── file.txt
+└── zad4
+    └── externals
+        └── a
+            ├── a
+            │   └── b
+            │       └── aab
+            ├── aa
+            │   └── b
+            │       └── aaab
+            ├── aaa
+            │   └── b
+            │       └── aaaab
+            ├── aab
+            │   └── b
+            │       └── aaabb
+            ├── ab
+            │   └── b
+            │       └── aabb
+            ├── aba
+            │   └── b
+            │       └── aabab
+            ├── abb
+            │   └── b
+            │       └── aabbb
+            ├── b
+            │   ├── ab
+            │   └── b
+            │       └── abb
+            ├── ba
+            │   └── b
+            │       └── abab
+            ├── baa
+            │   └── b
+            │       └── abaab
+            ├── bab
+            │   └── b
+            │       └── ababb
+            ├── bb
+            │   └── b
+            │       └── abbb
+            ├── bba
+            │   └── b
+            │       └── abbab
+            └── bbb
+                └── b
+                    └── abbbb
+
+34 directories, 19 files
+(20:15:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ rm -rf zad4/
+.svn/      externals/
+(20:15:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ rm -rf zad4/
+.svn/      externals/
+(20:15:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ rm -rf zad4/externals/a/
+(20:15:19)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ # sprawdzam svn up z --ignore-externals
+(20:15:33)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn up
+.svn/ zad1/ zad2/ zad4/
+(20:15:33)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ svn up zad4/ --ignore-externals
+Updating 'zad4':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+At revision 105.
+(20:16:04)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ tree
+.
+├── zad1
+│   ├── file.txt
+│   ├── konsola1_log.txt
+│   └── konsola2_log.txt
+├── zad2
+│   └── file.txt
+└── zad4
+    └── externals
+
+5 directories, 4 files
+(20:16:07)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ # ponownie --ignore-externals ignoruje zewnetrzne referencje
+(20:16:25)-(wztq)-(~/studia/sem7/sp/svn_kopia_robocza/lista2)
+ $ tmux capture-pane -pS - > konsola2_log.txt
+

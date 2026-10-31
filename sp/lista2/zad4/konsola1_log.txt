@@ -1,0 +1,115 @@
+(20:09:27)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ #Karol Wziątek - 279734
+(20:09:34)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ svn propset svn:externals "https://repo.cs.pwr.edu.pl/info/SP/l1/ externals" .
+property 'svn:externals' set on '.'
+(20:09:41)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ svn commit -m "Dodano zew. bib."
+(20:09:52)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+
+Fetching external item into 'externals':
+A    externals/a
+A    externals/a/a
+A    externals/a/a/b
+A    externals/a/aa
+A    externals/a/aa/b
+A    externals/a/aaa
+A    externals/a/aaa/b
+A    externals/a/aab
+A    externals/a/aab/b
+A    externals/a/ab
+A    externals/a/ab/b
+A    externals/a/aba
+A    externals/a/aba/b
+A    externals/a/abb
+A    externals/a/abb/b
+A    externals/a/b
+A    externals/a/b/b
+A    externals/a/ba
+A    externals/a/ba/b
+A    externals/a/baa
+A    externals/a/baa/b
+A    externals/a/bab
+A    externals/a/bab/b
+A    externals/a/bb
+A    externals/a/bb/b
+A    externals/a/bba
+A    externals/a/bba/b
+A    externals/a/bbb
+A    externals/a/bbb/b
+A    externals/a/a/b/aab
+A    externals/a/aa/b/aaab
+A    externals/a/aaa/b/aaaab
+A    externals/a/aab/b/aaabb
+A    externals/a/ab/b/aabb
+A    externals/a/aba/b/aabab
+A    externals/a/abb/b/aabbb
+A    externals/a/b/ab
+A    externals/a/b/b/abb
+A    externals/a/ba/b/abab
+A    externals/a/baa/b/abaab
+A    externals/a/bab/b/ababb
+A    externals/a/bb/b/abbb
+A    externals/a/bba/b/abbab
+A    externals/a/bbb/b/abbbb
+Updated external to revision 29.
+
+At revision 105.
+(20:10:03)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ tree
+.
+└── externals
+    └── a
+        ├── a
+        │   └── b
+        │       └── aab
+        ├── aa
+        │   └── b
+        │       └── aaab
+        ├── aaa
+        │   └── b
+        │       └── aaaab
+        ├── aab
+        │   └── b
+        │       └── aaabb
+        ├── ab
+        │   └── b
+        │       └── aabb
+        ├── aba
+        │   └── b
+        │       └── aabab
+        ├── abb
+        │   └── b
+        │       └── aabbb
+        ├── b
+        │   ├── ab
+        │   └── b
+        │       └── abb
+        ├── ba
+        │   └── b
+        │       └── abab
+        ├── baa
+        │   └── b
+        │       └── abaab
+        ├── bab
+        │   └── b
+        │       └── ababb
+        ├── bb
+        │   └── b
+        │       └── abbb
+        ├── bba
+        │   └── b
+        │       └── abbab
+        └── bbb
+            └── b
+                └── abbbb
+
+31 directories, 15 files
+(20:10:09)-(wztq)-(~/studia/sem7/sp/lista2/zad4)
+ $ tmux capture-pane -pS - > konsola1_log.txt
+

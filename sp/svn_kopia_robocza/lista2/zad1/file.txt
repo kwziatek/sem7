@@ -1,2 +1,1 @@
-File is used for demonstrating conflict-solving.
-Let's create a conflict here.
+Conflict has been solved.

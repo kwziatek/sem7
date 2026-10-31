@@ -1,0 +1,92 @@
+(19:08:32)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ #Karol Wziątek - 279734
+(19:08:45)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ #tworze plik z rozszerzeniem .sh, ktory moglby zostac poprawnie wywolany, gdyby mial chmod +x
+(19:09:26)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ code script.sh
+(19:09:35)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ ls
+script.sh
+(19:09:51)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ cat script.sh
+
+echo "You've executed this bash script."
+
+sleep 2
+
+echo "Train incomming..."
+
+sleep 2
+
+if command -v sl>/dev/null
+then
+    sl
+else
+    echo "Unfortunatley the train has been cancled."
+fi
+
+echo "Byeee"(19:09:59)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ #nadaje plikowi script.sh svnowe uprawnienia do wykonywania
+(19:11:14)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn propset svn:executable '*' script.sh
+'script.sh' is not under version control
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista2/zad3' was not found.
+(19:11:43)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn status
+?       .
+(19:12:21)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn add .
+A         .
+A         script.sh
+(19:12:25)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn propset svn:executable '*' script.sh
+property 'svn:executable' set on 'script.sh'
+(19:12:27)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ # sprawdzam, czy script.sh juz jest wykonywalny
+(19:12:56)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ ./script.sh
+You've executed this bash script.
+Train incomming...
+Byeee
+(19:13:15)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ # jest wykonywalny, commituje go do zdalnego repozytorium svn
+(19:13:45)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn commit -m "script.sh z svnowymi uprawnieniami do wykonywania"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Adding         .
+Adding         script.sh
+Transmitting file data .done
+Committing transaction...
+Committed revision 98.
+(19:14:36)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ # usuwam plik script.sh, zeby zobaczyc czy po 'svn update' script.sh bedzie od razu wykonywalny
+(19:15:09)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ rm script.sh
+(19:15:13)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ ls
+(19:15:14)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Restored 'script.sh'
+At revision 98.
+(19:15:20)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ ls
+script.sh
+(19:15:22)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ # widze ze script.sh swieci sie na zielono, dla pewnosci sprawdzam...
+(19:15:38)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ ./script.sh
+You've executed this bash script.
+Train incomming...
+Byeee
+(19:15:55)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ #wniosek - svn zapamietuje ze script.sh jest wykonywalny i od razu nadaje uprawnienia do wykonywania, gdy zostanie sciagniety loka
+lnie
+(19:16:40)-(wztq)-(~/studia/sem7/sp/lista2/zad3)
+ $ tmux capture-pane -pS - > log.txt
+

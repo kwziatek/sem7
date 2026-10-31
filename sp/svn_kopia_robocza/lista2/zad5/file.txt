@@ -1,0 +1,4 @@
+This is file serves a purpose of demonstrating svn locks.
+Editing locked file...
+Editing file after forcing the unlock.
+Editing file after stealing the lock.
