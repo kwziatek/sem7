@@ -1,0 +1,1 @@
+Nowy plik o nazwie 'b.txt' w podkatalogu 'b'.

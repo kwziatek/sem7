@@ -1,0 +1,100 @@
+(15:41:51)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ #Karol Wziatek 279734
+(15:41:56)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ svn log -v -r115:119
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+------------------------------------------------------------------------
+r115 | 279734 | 2026-10-31 15:14:12 +0100 (Sat, 31 Oct 2026) | 1 line
+Changed paths:
+   A /sp/lista2/zad6
+   A /sp/lista2/zad6/a
+   A /sp/lista2/zad6/a/a.txt
+   A /sp/lista2/zad6/b
+   A /sp/lista2/zad6/b/b.txt
+
+zad6 punkt 1
+------------------------------------------------------------------------
+r116 | 279734 | 2026-10-31 15:16:22 +0100 (Sat, 31 Oct 2026) | 1 line
+Changed paths:
+   D /sp/lista2/zad6/a/a.txt
+   A /sp/lista2/zad6/a/b.txt (from /sp/lista2/zad6/b/b.txt:115)
+   A /sp/lista2/zad6/b/a.txt (from /sp/lista2/zad6/a/a.txt:115)
+   D /sp/lista2/zad6/b/b.txt
+
+zamiana lokalizacji a.txt z b.txt i dodanie tekstu do każdego z plików
+------------------------------------------------------------------------
+r117 | 279734 | 2026-10-31 15:17:40 +0100 (Sat, 31 Oct 2026) | 1 line
+Changed paths:
+   D /sp/lista2/zad6/b/a.txt
+   A /sp/lista2/zad6/b/c.txt (from /sp/lista2/zad6/b/a.txt:116)
+
+zmiana a.txt na c.txt + nowa linia tekstu
+------------------------------------------------------------------------
+r118 | 279734 | 2026-10-31 15:18:47 +0100 (Sat, 31 Oct 2026) | 1 line
+Changed paths:
+   A /sp/lista2/zad6/a/a.txt (from /sp/lista2/zad6/a/b.txt:117)
+   D /sp/lista2/zad6/a/b.txt
+
+zmiana b.txt na a.txt + nowa linia tekstu
+------------------------------------------------------------------------
+r119 | 279734 | 2026-10-31 15:20:03 +0100 (Sat, 31 Oct 2026) | 1 line
+Changed paths:
+   A /sp/lista2/zad6/b/b.txt
+
+dodanie nowego pliku 'b.txt' w podkatalogu 'b'
+------------------------------------------------------------------------
+(15:42:17)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ svn diff -r115:119
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+Index: a/a.txt
+===================================================================
+--- a/a.txt     (revision 115)
++++ a/a.txt     (revision 119)
+@@ -1 +1,3 @@
+-To jest plik w podkatalogu 'a'.
+\ No newline at end of file
++To jest plik w podkatalogu 'b'.
++Ten plik teraz znajduje się w podkatalogu 'a'.
++Ten plik zmienia nazwę na 'a.txt'.
+\ No newline at end of file
+Index: b/b.txt
+===================================================================
+--- b/b.txt     (revision 115)
++++ b/b.txt     (revision 119)
+@@ -1 +1 @@
+-To jest plik w podkatalogu 'b'.
+\ No newline at end of file
++Nowy plik o nazwie 'b.txt' w podkatalogu 'b'.
+\ No newline at end of file
+Index: b/c.txt
+===================================================================
+--- b/c.txt     (nonexistent)
++++ b/c.txt     (revision 119)
+@@ -0,0 +1,3 @@
++To jest plik w podkatalogu 'a'.
++Ten plik znajduje się teraz w podkatalogu 'b'.
++Ten plik zmienia nazwę na 'c.txt'.
+\ No newline at end of file
+(15:42:45)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ svn cat -r 115 a/a.txt@119
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+To jest plik w podkatalogu 'b'.(15:43:58)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ #tutaj widzimy dobry przyklad na rozroznienie peg-revision i operative revision - peg-revision @119 wskazuje na to, ze zaczynamy sledzic plik o nazwie a/a.txt z rewizji 119, oprative re
+vision -r 115 wskazuje na to, ze wybieramy wersji sledzonego pliku z rewizji 115
+(15:46:06)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ svn cat -r 119 a/a.txt@115
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+svn: E195012: Unable to find repository location for 'https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista2/zad6/a/a.txt' in revision 119
+(15:46:35)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ #svn ma problem ze śledzeniem pliku w przód
+(15:46:44)-(wztq)-(~/studia/sem7/sp/lista2/zad6)
+ $ tmux capture-pane -pS - > log.txt
+
