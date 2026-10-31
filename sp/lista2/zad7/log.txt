@@ -1,0 +1,182 @@
+(16:02:48)-(wztq)-(~/studia/sem7/sp/lista2)
+ $ #Karol Wziątek 279734
+(16:02:56)-(wztq)-(~/studia/sem7/sp/lista2)
+ $ ls
+zad1  zad2  zad3  zad4  zad5  zad6
+(16:02:59)-(wztq)-(~/studia/sem7/sp/lista2)
+ $ mkdir zad7
+(16:03:03)-(wztq)-(~/studia/sem7/sp/lista2)
+ $ cd zad7
+(16:03:07)-(wztq)-(~/studia/sem7/sp/lista2/zad7)
+ $ code set_utf8.sh
+(16:03:19)-(wztq)-(~/studia/sem7/sp/lista2/zad7)
+ $ cat set_utf8.sh
+#!/bin/bash
+URL=$1
+PATTERN=$2
+TMP_DIR=$(mktemp -d)
+
+# 1. Pobranie repozytorium do tymczasowego katalogu
+svn checkout "$URL" "$TMP_DIR"
+
+# 2. Znalezienie plików wg wzorca i ustawienie właściwości
+find "$TMP_DIR" -type f -name "$PATTERN" -exec svn propset svn:mime-type "text/plain;charset=utf-8" {} +
+
+# 3. Wysłanie zmian na serwer i sprzątanie
+svn commit "$TMP_DIR" -m "Ustawiono UTF-8 dla plików $PATTERN"
+rm -rf "$TMP_DIR"(16:03:27)-(wztq)-(~/studia/sem7/sp/lista2/zad7)
+ $ sudo chmod +x set_utf8.sh
+[sudo] password for wztq:
+(16:04:11)-(wztq)-(~/studia/sem7/sp/lista2/zad7)
+ $ ./set_utf8.sh https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/ "*.txt"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository
+Password for '279734': *******
+
+A    /tmp/tmp.HXqtlDVHpw/lista1
+A    /tmp/tmp.HXqtlDVHpw/lista1/a
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/a
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/a/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aa
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aa/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aaa
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aaa/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aab/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ab/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aba
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aba/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/abb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/abb/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/b/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ba
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ba/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/baa
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/baa/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bab/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bb/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bba
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bba/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bbb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bbb/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/test_data
+A    /tmp/tmp.HXqtlDVHpw/lista2
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad1
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad2
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad3
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad5
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/a
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/b
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/a/b/aab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad5/konsola2_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad1/konsola2_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aa/b/aaab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aaa/b/aaaab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/b/c.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad2/log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad3/script.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aab/b/aaabb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ab/b/aabb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/aba/b/aabab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/abb/b/aabbb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/konsola2_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad5/konsola1_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/b/b.txt
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/b/ab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/b/b/abb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/ba/b/abab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/baa/b/abaab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bab/b/ababb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bb/b/abbb
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bba/b/abbab
+A    /tmp/tmp.HXqtlDVHpw/lista1/a/bbb/b/abbbb
+A    /tmp/tmp.HXqtlDVHpw/lista1/log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista1/test_data/test.txt
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad1.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad2.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad3.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad4.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad5.sh
+A    /tmp/tmp.HXqtlDVHpw/lista1/zad6.sh
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad1/file.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad1/konsola1_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad2/file.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad3/log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/konsola1_log.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad5/file.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/a/a.txt
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad6/log.txt
+
+Fetching external item into '/tmp/tmp.HXqtlDVHpw/lista2/zad4/externals':
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/a
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/a/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aa
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aa/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aaa
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aaa/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aab/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ab/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aba
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aba/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/abb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/abb/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/b/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ba
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ba/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/baa
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/baa/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bab/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bb/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bba
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bba/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bbb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bbb/b
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/a/b/aab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aa/b/aaab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aaa/b/aaaab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aab/b/aaabb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ab/b/aabb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/aba/b/aabab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/abb/b/aabbb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/b/ab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/b/b/abb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/ba/b/abab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/baa/b/abaab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bab/b/ababb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bb/b/abbb
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bba/b/abbab
+A    /tmp/tmp.HXqtlDVHpw/lista2/zad4/externals/a/bbb/b/abbbb
+Checked out external at revision 29.
+
+Checked out revision 121.
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista1/test_data/test.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista1/log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad4/konsola2_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad4/konsola1_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad5/file.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad5/konsola2_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad5/konsola1_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad2/file.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad2/log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad3/log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad1/file.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad1/konsola2_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad1/konsola1_log.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad6/a/a.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad6/b/c.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad6/b/b.txt'
+property 'svn:mime-type' set on '/tmp/tmp.HXqtlDVHpw/lista2/zad6/log.txt'
+(16:04:55)-(wztq)-(~/studia/sem7/sp/lista2/zad7)
+ $ tmux capture-pane -pS - > log.txt
+
