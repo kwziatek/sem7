@@ -1,0 +1,1143 @@
+(16:47:00)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ #Karol Wziątek 279734
+(16:47:04)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn copy https://repo.cs.pwr.edu.pl/p-0/app_1/trunk/ https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734 -m "tworzenie gałęzi dla 279734"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Committing transaction...
+Committed revision 58.
+(16:47:42)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ ls
+(16:47:56)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734/
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista3' was not found.
+(16:48:21)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+At revision 122.
+(16:48:27)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734/
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista3' was not found.
+(16:48:42)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn co https://repo.cs.pwr.edu.pl/p-0/app_1/trunk/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+A    trunk/README
+A    trunk/main.c
+A    trunk/makefile
+A    trunk/program.h
+A    trunk/s279717_podprogram.c
+A    trunk/s279686_podprogram.c
+A    trunk/s279767_podprogram.c
+A    trunk/s272135_podprogram.c
+A    trunk/s279771_podprogram.c
+A    trunk/s279752_podprogram.c
+A    trunk/s279743_podprogram.c
+A    trunk/program_usage.c
+A    trunk/s0_podprogram.c
+A    trunk/s999_podprogram.c
+ U   trunk
+Checked out revision 58.
+(16:49:41)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app1/branches/279734                                   
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista3' was not found.
+(16:50:02)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ ls
+trunk
+(16:50:04)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ rm -rf trunk/
+(16:50:09)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ ls
+(16:50:10)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn co https://repo.cs.pwr.edu.pl/p-0/app_1/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+A    app_1/branches
+A    app_1/branches/279734
+A    app_1/branches/999
+A    app_1/tags
+A    app_1/tags/v_279717
+A    app_1/tags/v_279686
+A    app_1/tags/v_279717/s999_podprogram.c
+A    app_1/tags/v_279717/s279717_podprogram.c
+A    app_1/branches/279734/README
+A    app_1/tags/v_279686/makefile
+A    app_1/tags/v_279767
+A    app_1/tags/v_279717/s279767_podprogram.c
+A    app_1/branches/279734/main.c
+A    app_1/tags/v_279717/s279771_podprogram.c
+A    app_1/branches/279734/makefile
+A    app_1/tags/v_279686/s279767_podprogram.c
+A    app_1/tags/v_279717/s279743_podprogram.c
+A    app_1/tags/v_279686/s279752_podprogram.c
+A    app_1/branches/279734/program.h
+A    app_1/tags/v_279686/s279743_podprogram.c
+A    app_1/tags/v_279717/s0_podprogram.c
+A    app_1/branches/279734/s279717_podprogram.c
+A    app_1/tags/v_279686/s999_podprogram.c
+A    app_1/tags/v_272135
+A    app_1/tags/v_279767/README
+A    app_1/tags/v_279767/program.h
+A    app_1/tags/v_279686/main.c
+A    app_1/branches/279734/s279686_podprogram.c
+A    app_1/tags/v_279767/s279767_podprogram.c
+A    app_1/tags/v_279686/s279686_podprogram.c
+A    app_1/branches/279734/s279767_podprogram.c
+A    app_1/tags/v_279767/s279752_podprogram.c
+A    app_1/tags/v_279767/s279743_podprogram.c
+A    app_1/tags/v_279686/s279771_podprogram.c
+A    app_1/branches/279734/s272135_podprogram.c
+A    app_1/tags/v_279767/s999_podprogram.c
+A    app_1/tags/v_279771
+A    app_1/tags/v_279686/s0_podprogram.c
+A    app_1/branches/279734/s279771_podprogram.c
+A    app_1/tags/v_272135/README
+A    app_1/tags/v_272135/program.h
+A    app_1/tags/v_279767/makefile
+A    app_1/tags/v_272135/s272135_podprogram.c
+A    app_1/branches/279734/s279752_podprogram.c
+A    app_1/tags/v_272135/s279743_podprogram.c
+A    app_1/tags/v_272135/program_usage.c
+A    app_1/tags/v_279767/s279771_podprogram.c
+A    app_1/branches/279734/s279743_podprogram.c
+A    app_1/tags/v_279752
+A    app_1/tags/v_279771/README
+A    app_1/tags/v_279767/s0_podprogram.c
+A    app_1/tags/v_279771/main.c
+A    app_1/branches/279734/program_usage.c
+A    app_1/tags/v_279771/s279771_podprogram.c
+A    app_1/tags/v_272135/makefile
+A    app_1/tags/v_279743
+A    app_1/branches/279734/s0_podprogram.c
+A    app_1/tags/v_279771/s279752_podprogram.c
+A    app_1/tags/v_279771/s0_podprogram.c
+A    app_1/tags/v_272135/s279752_podprogram.c
+A    app_1/branches/279734/s999_podprogram.c
+A    app_1/branches/999/README
+A    app_1/branches/999/main.c
+A    app_1/branches/999/makefile
+A    app_1/branches/999/program.h
+A    app_1/tags/v_279771/s999_podprogram.c
+A    app_1/tags/v_279752/makefile
+A    app_1/tags/v_279752/s0_podprogram.c
+A    app_1/tags/v_999
+A    app_1/tags/v_279752/main.c
+A    app_1/tags/v_279752/program_usage.c
+A    app_1/tags/v_272135/s999_podprogram.c
+A    app_1/tags/v_279771/program.h
+A    app_1/tags/v_279771/program_usage.c
+A    app_1/tags/v_279752/README
+A    app_1/tags/v_279752/s279743_podprogram.c
+A    app_1/branches/999/program_usage.c
+A    app_1/branches/999/s0_podprogram.c
+A    app_1/trunk
+A    app_1/branches/999/s999_podprogram.c
+A    app_1/tags/v_279717/README
+A    app_1/tags/v_279743/main.c
+A    app_1/tags/v_279743/README
+A    app_1/tags/v_279743/makefile
+A    app_1/tags/v_279743/s279743_podprogram.c
+A    app_1/tags/v_279717/main.c
+A    app_1/tags/v_279743/s0_podprogram.c
+A    app_1/tags/v_279743/program_usage.c
+A    app_1/tags/v_999/main.c
+A    app_1/tags/v_279717/makefile
+A    app_1/tags/v_999/README
+A    app_1/tags/v_999/s0_podprogram.c
+A    app_1/tags/v_999/makefile
+A    app_1/tags/v_279717/program.h
+A    app_1/tags/v_999/program_usage.c
+A    app_1/trunk/makefile
+A    app_1/tags/v_999/s999_podprogram.c
+A    app_1/tags/v_279717/s279686_podprogram.c
+A    app_1/trunk/main.c
+A    app_1/trunk/s279767_podprogram.c
+A    app_1/trunk/s279743_podprogram.c
+A    app_1/tags/v_279717/s272135_podprogram.c
+A    app_1/tags/v_279717/s279752_podprogram.c
+A    app_1/tags/v_279717/program_usage.c
+A    app_1/tags/v_279686/README
+A    app_1/tags/v_279686/program.h
+A    app_1/tags/v_279686/s272135_podprogram.c
+A    app_1/trunk/program.h
+A    app_1/trunk/s272135_podprogram.c
+A    app_1/trunk/program_usage.c
+A    app_1/trunk/s279686_podprogram.c
+A    app_1/trunk/s279752_podprogram.c
+A    app_1/trunk/s999_podprogram.c
+A    app_1/tags/v_279686/program_usage.c
+A    app_1/tags/v_279767/main.c
+A    app_1/tags/v_279767/s272135_podprogram.c
+A    app_1/tags/v_279767/program_usage.c
+A    app_1/tags/v_272135/main.c
+A    app_1/tags/v_272135/s279771_podprogram.c
+A    app_1/tags/v_272135/s0_podprogram.c
+A    app_1/tags/v_279771/makefile
+A    app_1/tags/v_279771/s279743_podprogram.c
+A    app_1/tags/v_279752/s279752_podprogram.c
+A    app_1/tags/v_279752/program.h
+A    app_1/tags/v_279752/s999_podprogram.c
+A    app_1/tags/v_279743/program.h
+A    app_1/tags/v_279743/s999_podprogram.c
+A    app_1/tags/v_999/program.h
+A    app_1/trunk/README
+A    app_1/trunk/s279717_podprogram.c
+A    app_1/trunk/s279771_podprogram.c
+A    app_1/trunk/s0_podprogram.c
+Checked out revision 58.
+(16:50:23)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app1/branches/279734    
+svn: E155010: The node '/home/wztq/studia/sem7/sp/lista3' was not found.
+(16:51:05)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ ls
+app_1
+(16:51:10)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ cd app_1/
+(16:51:11)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app1/branches/279734
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+svn: E160013: '/p-0/!svn/rvr/58/app1/branches/279734' path not found
+(16:51:16)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+svn: E195012: Path '.' does not share common version control ancestry with the requested switch location.  Use --ignore-ancestry to disable this check.
+svn: E195012: 'https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734' shares no common ancestry with '/home/wztq/studia/sem7/sp/lista3/app_1'
+(16:51:32)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn switch --ignore-ancestry https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+D    branches
+D    tags
+D    trunk
+A    README
+A    main.c
+A    makefile
+A    program.h
+A    s279717_podprogram.c
+A    s279686_podprogram.c
+A    s279767_podprogram.c
+A    s272135_podprogram.c
+A    s279771_podprogram.c
+A    s279752_podprogram.c
+A    s279743_podprogram.c
+A    program_usage.c
+A    s0_podprogram.c
+A    s999_podprogram.c
+ U   .
+Updated to revision 58.
+(16:52:08)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat program.h
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+
+/* deklaracje funkcji używanych w programie */
+void program_usage( );
+
+
+/* tu studenci mogą deklarować własne funkcje.
+   Wszystkie nazwy funkcji studenta o numerze indeksu NNNNNN
+   powinny rozpoczynać się od przedrostka sNNNNNN_
+   aby nie kolidowały z nazwami funkcji innych studentów */
+
+void s0_podprogram(); /* funkcja studenta 0 */
+void s999_podprogram(); /* funkcja studenta 999 */
+
+void s279743_podprogram(); /* funkcja studenta 279743 */
+void s279752_podprogram(); /* funkcja studenta 279752*/
+void s279771_podprogram(); /* funkcja studenta 279771*/
+void s272135_podprogram(); /* funkcja studenta 272135*/
+void s279767_podprogram(); /* funkcja studenta 279767*/
+void s279686_podprogram(); /* funkcja studenta 279686*/
+void s279717_podprogram(); /* funkcja studenta 279717*/
+
+(16:55:27)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat s279717_podprogram.c 
+#include "program.h"
+
+#define S279717_CM_W_CALU 2.54
+#define S279717_BIG_MAC_CM 9.1
+#define S279717_BIELIK_CM 230.0
+
+void s279717_podprogram()
+{
+  double cm;
+  long dziesiate_cala;
+
+  printf("Michał Zakrzewski, 279717\n");
+  printf("Program wczytuje wzrost w centymetrach i podaje go w stopach i calach,\n");
+  printf("w Big Macach (9,1 cm wysokości) oraz w rozpiętościach skrzydeł\n");
+  printf("bielika amerykańskiego (2,3 m).\n\n");
+  printf("Podaj wzrost w cm: ");
+
+  if(scanf("%lf", &cm) != 1)
+    {
+      printf("\nBłąd: to nie jest liczba.\n");
+      return;
+    }
+
+  if(cm < 0)
+    {
+      printf("\nBłąd: wzrost nie może być ujemny.\n");
+      return;
+    }
+
+  dziesiate_cala = (long)(cm / S279717_CM_W_CALU * 10 + 0.5);
+
+  printf("\nWzrost %.1f cm to:\n", cm);
+  printf("  %ld ft %ld.%ld in\n", dziesiate_cala / 120,
+         dziesiate_cala % 120 / 10, dziesiate_cala % 10);
+  printf("  %.2f Big Maców\n", cm / S279717_BIG_MAC_CM);
+  printf("  %.2f rozpiętości skrzydeł bielika amerykańskiego\n",
+         cm / S279717_BIELIK_CM);
+}
+(16:56:07)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ls
+README  makefile   program_usage.c  s272135_podprogram.c  s279717_podprogram.c  s279752_podprogram.c  s279771_podprogram.c
+main.c  program.h  s0_podprogram.c  s279686_podprogram.c  s279743_podprogram.c  s279767_podprogram.c  s999_podprogram.c
+(16:58:44)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ code s279734_podprogram.c
+(16:58:56)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat s279734_podprogram.c 
+#include "program.h"
+
+void s279734_podprogram()
+{
+    printf("Karol Wziatek, 279734\n");
+    printf("Program wczytuje pojedyncze słowo ze standardowego wejścia");
+    printf("A następnie dla każdego znaku wyświetla jego reprezentację znakową oraz kod ASCII");
+
+    char slowo[101];
+
+    printf("Podaj slowo: ");
+    if (scanf("%100s", slowo) == 1) {
+        printf("\nKody ASCII dla poszczegolnych liter:\n");
+        for (int i = 0; slowo[i] != '\0'; i++) {
+            printf("Znak '%c' -> ASCII: %d\n", slowo[i], (unsigned char)slowo[i]);
+        }
+    } else {
+        printf("Blad odczytu slowa.\n");
+    }
+}(17:00:49)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ls 
+README  makefile   program_usage.c  s272135_podprogram.c  s279717_podprogram.c  s279743_podprogram.c  s279767_podprogram.c  s999_podprogram.c
+main.c  program.h  s0_podprogram.c  s279686_podprogram.c  s279734_podprogram.c  s279752_podprogram.c  s279771_podprogram.c
+(17:00:58)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat README 
+Ten plik README utworzony, żeby studenci mogli umieszczać 
+tu opisy działania swoich podprogramów.
+
+
+Wywołanie programu:
+
+   program ARG
+
+Dla poszczególnych wartości ARG program działa następująco:
+
+         0 - wyświetla ogólny opis działania podprogramów;
+       999 - wczytuje liczbę i drukuje jej kwadrat.
+           279743 - wczytuje liczbe n i wypisuje n-ta liczbe pierwsza.
+      279752 - wczytuje wage i wzrost i na ich podstawie liczy BMI osoby i wypisuje kategorie.
+      279771 - wczytuje dowolny tekst, zawija go i wyświetla w formie dialogu między żabami.
+      272135 - wczytuje liczbe i wypisuje n-tą liczbe Fibonaciego
+      279767 - wczytuje liczbę z zakresu 1-3999 i drukuje ją w zapisie rzymskim
+      279686 - wczytuje liczbę i sprawdza, czy jest ona palindromem.
+      279717 - wczytuje wzrost w cm i podaje go w stopach i calach, w Big Macach i w rozpiętościach skrzydeł bielika.
+
+
+Dodatkowo, po zreintegrowaniu swojej gałęzi do trunk-a student ma utworzyć 
+w katalogu: 
+
+^/app_1/tags
+
+własnego taga tej wersji o nazwie: v_<nr_indeksu>
+(17:01:53)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ code README 
+(17:02:06)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat README
+Ten plik README utworzony, żeby studenci mogli umieszczać 
+tu opisy działania swoich podprogramów.
+
+
+Wywołanie programu:
+
+   program ARG
+
+Dla poszczególnych wartości ARG program działa następująco:
+
+         0 - wyświetla ogólny opis działania podprogramów;
+       999 - wczytuje liczbę i drukuje jej kwadrat.
+           279743 - wczytuje liczbe n i wypisuje n-ta liczbe pierwsza.
+      279752 - wczytuje wage i wzrost i na ich podstawie liczy BMI osoby i wypisuje kategorie.
+      279771 - wczytuje dowolny tekst, zawija go i wyświetla w formie dialogu między żabami.
+      272135 - wczytuje liczbe i wypisuje n-tą liczbe Fibonaciego
+      279767 - wczytuje liczbę z zakresu 1-3999 i drukuje ją w zapisie rzymskim
+      279686 - wczytuje liczbę i sprawdza, czy jest ona palindromem.
+      279717 - wczytuje wzrost w cm i podaje go w stopach i calach, w Big Macach i w rozpiętościach skrzydeł bielika.
+      279734 - wczytuje słowo długości do 100 znaków i dla każdej litery wyświetla jej reprezentację w ASCII.
+
+
+Dodatkowo, po zreintegrowaniu swojej gałęzi do trunk-a student ma utworzyć 
+w katalogu: 
+
+^/app_1/tags
+
+własnego taga tej wersji o nazwie: v_<nr_indeksu>
+(17:03:10)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ls
+README  makefile   program_usage.c  s272135_podprogram.c  s279717_podprogram.c  s279743_podprogram.c  s279767_podprogram.c  s999_podprogram.c
+main.c  program.h  s0_podprogram.c  s279686_podprogram.c  s279734_podprogram.c  s279752_podprogram.c  s279771_podprogram.c
+(17:03:16)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat main.c
+#include "program.h"
+
+
+int main(int argc, char *argv[])
+{
+
+  if(argc!=2)
+    {
+      program_usage();
+      exit(EXIT_FAILURE);
+    }
+
+  {
+    int idx=atoi(argv[1]);
+    switch( idx )
+      {
+      case 0:
+        s0_podprogram() ; // podprogram studenta o numerze indeksu 0
+        break;
+       case 999:
+                s999_podprogram() ; // podprogram studenta o numerze indeksu 999
+                break;
+      case 279743:
+        s279743_podprogram() ; // podprogram studenta o numerze indeksu 279743
+        break;
+      case 279752:
+        s279752_podprogram();
+        break;
+      case 279771:
+        s279771_podprogram(); // podprogram studenta o numerze indeksu 279771
+        break;
+      case 272135:
+        s272135_podprogram(); // podprogram studenta o numerze indeksu 272135
+        break;
+      case 279767:
+        s279767_podprogram(); // podprogram studenta o numerze indeksu 279767
+        break;
+      case 279686:
+        s279686_podprogram(); // podprogram studenta o numerze indeksu 279686
+        break;
+      case 279717:
+        s279717_podprogram(); // podprogram studenta o numerze indeksu 279717
+        break;
+      default:
+        printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",idx); 
+      break;
+
+      }
+  }
+  exit(EXIT_SUCCESS);
+}
+(17:03:29)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ code main.c
+(17:03:36)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat main.c 
+#include "program.h"
+
+
+int main(int argc, char *argv[])
+{
+
+  if(argc!=2)
+    {
+      program_usage();
+      exit(EXIT_FAILURE);
+    }
+
+  {
+    int idx=atoi(argv[1]);
+    switch( idx )
+      {
+      case 0:
+        s0_podprogram() ; // podprogram studenta o numerze indeksu 0
+        break;
+       case 999:
+                s999_podprogram() ; // podprogram studenta o numerze indeksu 999
+                break;
+      case 279743:
+        s279743_podprogram() ; // podprogram studenta o numerze indeksu 279743
+        break;
+      case 279752:
+        s279752_podprogram();
+        break;
+      case 279771:
+        s279771_podprogram(); // podprogram studenta o numerze indeksu 279771
+        break;
+      case 272135:
+        s272135_podprogram(); // podprogram studenta o numerze indeksu 272135
+        break;
+      case 279767:
+        s279767_podprogram(); // podprogram studenta o numerze indeksu 279767
+        break;
+      case 279686:
+        s279686_podprogram(); // podprogram studenta o numerze indeksu 279686
+        break;
+      case 279717:
+        s279717_podprogram(); // podprogram studenta o numerze indeksu 279717
+        break;
+    case 279734:
+      s279734_podprogram(); // podprogram studenta o numerze indeksu 279734
+      break;
+    default:
+        printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",idx); 
+      break;
+
+      }
+  }
+  exit(EXIT_SUCCESS);
+}
+(17:05:02)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat makefile
+objects = main.o program_usage.o \
+          s0_podprogram.o \
+          s999_podprogram.o \
+                  s279743_podprogram.o \
+                  s279752_podprogram.o \
+                  s279771_podprogram.o \
+                  s272135_podprogram.o \
+                  s279767_podprogram.o \
+                  s279686_podprogram.o \
+                  s279717_podprogram.o
+
+program : $(objects)
+        cc -o program $(objects) -lm
+main.o : program.h
+
+program_usage.o : program.h
+
+s0_podprogram.o : program.h
+
+s999_podprogram.o : program.h
+
+s279743_podprogram.o : program.h
+
+s279752_podprogram.o : program.h
+
+s279771_podprogram.o : program.h
+
+s272135_podprogram.o : program.h
+
+s279767_podprogram.o : program.h
+
+s279686_podprogram.o : program.h
+
+s279717_podprogram.o : program.h
+
+.PHONY : clean
+
+clean : 
+        -rm *.o program
+(17:05:37)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ code program.h 
+(17:05:47)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat makefile 
+objects = main.o program_usage.o \
+          s0_podprogram.o \
+          s999_podprogram.o \
+                  s279743_podprogram.o \
+                  s279752_podprogram.o \
+                  s279771_podprogram.o \
+                  s272135_podprogram.o \
+                  s279767_podprogram.o \
+                  s279686_podprogram.o \
+                  s279717_podprogram.o
+
+program : $(objects)
+        cc -o program $(objects) -lm
+main.o : program.h
+
+program_usage.o : program.h
+
+s0_podprogram.o : program.h
+
+s999_podprogram.o : program.h
+
+s279743_podprogram.o : program.h
+
+s279752_podprogram.o : program.h
+
+s279771_podprogram.o : program.h
+
+s272135_podprogram.o : program.h
+
+s279767_podprogram.o : program.h
+
+s279686_podprogram.o : program.h
+
+s279717_podprogram.o : program.h
+
+.PHONY : clean
+
+clean : 
+        -rm *.o program
+(17:06:15)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat program.h                                                                                                                                                                                                 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+
+/* deklaracje funkcji używanych w programie */
+void program_usage( );
+
+
+/* tu studenci mogą deklarować własne funkcje.
+   Wszystkie nazwy funkcji studenta o numerze indeksu NNNNNN
+   powinny rozpoczynać się od przedrostka sNNNNNN_
+   aby nie kolidowały z nazwami funkcji innych studentów */
+
+void s0_podprogram(); /* funkcja studenta 0 */
+void s999_podprogram(); /* funkcja studenta 999 */
+
+void s279743_podprogram(); /* funkcja studenta 279743 */
+void s279752_podprogram(); /* funkcja studenta 279752*/
+void s279771_podprogram(); /* funkcja studenta 279771*/
+void s272135_podprogram(); /* funkcja studenta 272135*/
+void s279767_podprogram(); /* funkcja studenta 279767*/
+void s279686_podprogram(); /* funkcja studenta 279686*/
+void s279717_podprogram(); /* funkcja studenta 279717*/
+void s279734_podprogram(); /* funkcja studenta 279734*/
+
+(17:06:36)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ code makefile
+(17:06:40)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat makefile 
+objects = main.o program_usage.o \
+          s0_podprogram.o \
+          s999_podprogram.o \
+                  s279743_podprogram.o \
+                  s279752_podprogram.o \
+                  s279771_podprogram.o \
+                  s272135_podprogram.o \
+                  s279767_podprogram.o \
+                  s279686_podprogram.o \
+                  s279717_podprogram.o \
+                  s279734_podprogram.o
+
+program : $(objects)
+        cc -o program $(objects) -lm
+main.o : program.h
+
+program_usage.o : program.h
+
+s0_podprogram.o : program.h
+
+s999_podprogram.o : program.h
+
+s279743_podprogram.o : program.h
+
+s279752_podprogram.o : program.h
+
+s279771_podprogram.o : program.h
+
+s272135_podprogram.o : program.h
+
+s279767_podprogram.o : program.h
+
+s279686_podprogram.o : program.h
+
+s279717_podprogram.o : program.h
+
+s279734_podgragram.o : program.h
+
+.PHONY : clean
+
+clean : 
+        -rm *.o program
+(17:07:24)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ls
+README  makefile   program_usage.c  s272135_podprogram.c  s279717_podprogram.c  s279743_podprogram.c  s279767_podprogram.c  s999_podprogram.c
+main.c  program.h  s0_podprogram.c  s279686_podprogram.c  s279734_podprogram.c  s279752_podprogram.c  s279771_podprogram.c
+(17:07:32)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat program_usage.c 
+#include "program.h"
+
+void program_usage( )
+{
+  printf("wywołanie: program <nr_indeksu>\n");
+}
+(17:07:50)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn status
+M       README
+M       main.c
+M       makefile
+M       program.h
+?       s279734_podprogram.c
+(17:08:10)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ## drobna zmiana w s27934                                                                                                                                                                           
+(17:12:44)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ cat s279734_podprogram.c 
+#include "program.h"
+
+void s279734_podprogram()
+{
+    printf("Karol Wziatek, 279734\n");
+    printf("Program wczytuje pojedyncze słowo ze standardowego wejścia.\n");
+    printf("A następnie dla każdego znaku wyświetla jego reprezentację znakową oraz kod ASCII.\n");
+
+    char slowo[101];
+
+    printf("Podaj slowo: ");
+    if (scanf("%100s", slowo) == 1) {
+        printf("\nKody ASCII dla poszczegolnych liter:\n");
+        for (int i = 0; slowo[i] != '\0'; i++) {
+            printf("Znak '%c' -> ASCII: %d\n", slowo[i], (unsigned char)slowo[i]);
+        }
+    } else {
+        printf("Blad odczytu slowa.\n");
+    }
+}(17:13:33)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn status
+M       README
+M       main.c
+M       makefile
+M       program.h
+?       s279734_podprogram.c
+(17:13:51)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn add s279734_podprogram.c 
+A         s279734_podprogram.c
+(17:14:01)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn commit -m "implementacja s279734_podprogram.c"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Sending        README
+Sending        main.c
+Sending        makefile
+Sending        program.h
+Adding         s279734_podprogram.c
+Transmitting file data .....done
+Committing transaction...
+Committed revision 59.
+(17:15:49)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ## synchronizuje brancha z trunkiem
+(17:17:33)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn merge https://repo.cs.pwr.edu.pl/p-0/app1/trunk
+svn: E195020: Cannot merge into mixed-revision working copy [58:59]; try updating first
+(17:17:35)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+At revision 59.
+(17:17:45)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn merge https://repo.cs.pwr.edu.pl/p-0/app1/trunk
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+svn: E160013: '/p-0/!svn/rvr/59/app1/trunk' path not found
+(17:17:52)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn merge https://repo.cs.pwr.edu.pl/p-0/app_1/trunk
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+--- Recording mergeinfo for merge of r58 through r59 into '.':
+ U   .
+(17:18:40)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn commit -m "Synchronizacja z trunkiem dla 279734"                                                                                                                                                         
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Sending        .
+Committing transaction...
+Committed revision 60.
+(17:19:47)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app_1/trunk
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+U    main.c
+U    README
+U    makefile
+U    program.h
+D    s279734_podprogram.c
+ U   .
+Updated to revision 60.
+(17:21:21)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn update
+Updating '.':
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+At revision 60.
+(17:21:35)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn merge https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+--- Merging r58 through r60 into '.':
+U    README
+U    main.c
+U    makefile
+U    program.h
+A    s279734_podprogram.c
+ U   .
+--- Recording mergeinfo for merge of r58 through r60 into '.':
+ U   .
+(17:22:24)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn commit -m "Reintegracja galezi 279734 do trunka"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Sending        .
+Sending        README
+Sending        main.c
+Sending        makefile
+Sending        program.h
+Adding         s279734_podprogram.c
+Transmitting file data ....done
+Committing transaction...
+Committed revision 61.
+(17:22:37)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn delete https://repo.cs.pwr.edu.pl/p-0/app_1/branches/279734 -m "Usuniecie niepotrzebnej galezi 279734 po reintegracji"
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Committing transaction...
+Committed revision 62.
+(17:23:36)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn copy https://repo.cs.pwr.edu.pl/p-0/app_1/trunk https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v_279734/ -m "Utworzenie taga dla 279734"                                                                       
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Committing transaction...
+Committed revision 63.
+(17:25:32)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ tree
+.
+├── README
+├── main.c
+├── makefile
+├── program.h
+├── program_usage.c
+├── s0_podprogram.c
+├── s272135_podprogram.c
+├── s279686_podprogram.c
+├── s279717_podprogram.c
+├── s279734_podprogram.c
+├── s279743_podprogram.c
+├── s279752_podprogram.c
+├── s279767_podprogram.c
+├── s279771_podprogram.c
+└── s999_podprogram.c
+
+1 directory, 15 files
+(17:26:54)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn switch https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v_279734/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+At revision 63.
+(17:27:20)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ tree
+.
+├── README
+├── main.c
+├── makefile
+├── program.h
+├── program_usage.c
+├── s0_podprogram.c
+├── s272135_podprogram.c
+├── s279686_podprogram.c
+├── s279717_podprogram.c
+├── s279734_podprogram.c
+├── s279743_podprogram.c
+├── s279752_podprogram.c
+├── s279767_podprogram.c
+├── s279771_podprogram.c
+└── s999_podprogram.c
+
+1 directory, 15 files
+(17:27:24)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ## pokazuje, ze nic sie kompiluje i nic nie zepsulem
+(17:27:42)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ make
+cc    -c -o main.o main.c
+cc    -c -o program_usage.o program_usage.c
+cc    -c -o s0_podprogram.o s0_podprogram.c
+cc    -c -o s999_podprogram.o s999_podprogram.c
+cc    -c -o s279743_podprogram.o s279743_podprogram.c
+cc    -c -o s279752_podprogram.o s279752_podprogram.c
+cc    -c -o s279771_podprogram.o s279771_podprogram.c
+cc    -c -o s272135_podprogram.o s272135_podprogram.c
+cc    -c -o s279767_podprogram.o s279767_podprogram.c
+cc    -c -o s279686_podprogram.o s279686_podprogram.c
+cc    -c -o s279717_podprogram.o s279717_podprogram.c
+cc    -c -o s279734_podprogram.o s279734_podprogram.c
+cc -o program main.o program_usage.o s0_podprogram.o s999_podprogram.o s279743_podprogram.o s279752_podprogram.o s279771_podprogram.o s272135_podprogram.o s279767_podprogram.o s279686_podprogram.o s279717_podprogram.o s279734_podprogram.o -lm
+(17:27:46)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ./279734
+-bash: ./279734: No such file or directory
+(17:27:53)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ ./program 279734
+Karol Wziatek, 279734
+Program wczytuje pojedyncze słowo ze standardowego wejścia.
+A następnie dla każdego znaku wyświetla jego reprezentację znakową oraz kod ASCII.
+Podaj slowo: Srodowisko programisty
+
+Kody ASCII dla poszczegolnych liter:
+Znak 'S' -> ASCII: 83
+Znak 'r' -> ASCII: 114
+Znak 'o' -> ASCII: 111
+Znak 'd' -> ASCII: 100
+Znak 'o' -> ASCII: 111
+Znak 'w' -> ASCII: 119
+Znak 'i' -> ASCII: 105
+Znak 's' -> ASCII: 115
+Znak 'k' -> ASCII: 107
+Znak 'o' -> ASCII: 111
+(17:28:25)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn log https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v1.0-279734/s279734_podprogram.c
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': ^Dsvn: E170013: Unable to connect to a repository at URL 'https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v1.0-279734/s279734_podprogram.c'
+svn: E070014: End of file while reading from terminal
+(17:29:19)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn log https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v_279734/s279734_podprogram.c                                                                                                                              
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+------------------------------------------------------------------------
+r63 | 279734 | 2026-11-10 17:25:32 +0100 (Tue, 10 Nov 2026) | 1 line
+
+Utworzenie taga dla 279734
+------------------------------------------------------------------------
+r61 | 279734 | 2026-11-10 17:22:37 +0100 (Tue, 10 Nov 2026) | 1 line
+
+Reintegracja galezi 279734 do trunka
+------------------------------------------------------------------------
+r59 | 279734 | 2026-11-10 17:15:49 +0100 (Tue, 10 Nov 2026) | 1 line
+
+implementacja s279734_podprogram.c
+------------------------------------------------------------------------
+(17:29:34)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn log -g main.c
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+------------------------------------------------------------------------
+r63 | 279734 | 2026-11-10 17:25:32 +0100 (Tue, 10 Nov 2026) | 1 line
+
+Utworzenie taga dla 279734
+------------------------------------------------------------------------
+r61 | 279734 | 2026-11-10 17:22:37 +0100 (Tue, 10 Nov 2026) | 1 line
+
+Reintegracja galezi 279734 do trunka
+------------------------------------------------------------------------
+r59 | 279734 | 2026-11-10 17:15:49 +0100 (Tue, 10 Nov 2026) | 1 line
+Merged via: r61
+
+implementacja s279734_podprogram.c
+------------------------------------------------------------------------
+r58 | 279734 | 2026-11-10 16:47:42 +0100 (Tue, 10 Nov 2026) | 1 line
+Merged via: r61
+
+tworzenie gałęzi dla 279734
+------------------------------------------------------------------------
+r55 | 279717 | 2026-11-09 20:37:13 +0100 (Mon, 09 Nov 2026) | 1 line
+
+279717: reintegruję gałąź do trunk
+------------------------------------------------------------------------
+r53 | 279717 | 2026-11-09 20:20:39 +0100 (Mon, 09 Nov 2026) | 1 line
+Merged via: r55
+
+279717: dodaję podprogram
+------------------------------------------------------------------------
+r52 | 279717 | 2026-11-09 20:00:39 +0100 (Mon, 09 Nov 2026) | 1 line
+Merged via: r55
+
+279717: tworzę gałąź
+------------------------------------------------------------------------
+r49 | 279686 | 2026-11-09 19:35:05 +0100 (Mon, 09 Nov 2026) | 1 line
+
+Reintegracja podprogramu 279686 do trunk
+------------------------------------------------------------------------
+r47 | 279686 | 2026-11-09 19:30:05 +0100 (Mon, 09 Nov 2026) | 1 line
+Merged via: r49
+
+Zaimplementowano podprogram 279686 - sprawdzanie palindromu
+------------------------------------------------------------------------
+r46 | 279686 | 2026-11-09 19:12:19 +0100 (Mon, 09 Nov 2026) | 1 line
+Merged via: r49
+
+Utworzenie wlasnej galezi dla 279686
+------------------------------------------------------------------------
+r43 | 279767 | 2026-11-08 17:32:29 +0100 (Sun, 08 Nov 2026) | 1 line
+
+student 279767 reintegruje gałąź do trunk
+------------------------------------------------------------------------
+r41 | 279767 | 2026-11-08 17:25:09 +0100 (Sun, 08 Nov 2026) | 1 line
+Merged via: r43
+
+student 279767: podprogram liczby rzymskie
+------------------------------------------------------------------------
+r40 | 279767 | 2026-11-08 17:18:58 +0100 (Sun, 08 Nov 2026) | 1 line
+Merged via: r43
+
+student 279767 tworzy gałąź
+------------------------------------------------------------------------
+r37 | 272135 | 2026-11-07 15:04:04 +0100 (Sat, 07 Nov 2026) | 1 line
+
+Reintegracja galezi s272135 do trunka
+------------------------------------------------------------------------
+r35 | 272135 | 2026-11-07 14:59:48 +0100 (Sat, 07 Nov 2026) | 1 line
+Merged via: r37
+
+Implementacja podprogramu Fibonacciego dla 272135
+------------------------------------------------------------------------
+r34 | 272135 | 2026-11-07 14:49:29 +0100 (Sat, 07 Nov 2026) | 1 line
+Merged via: r37
+
+Utworzenie galezi s272135
+------------------------------------------------------------------------
+r31 | 279771 | 2026-11-06 11:23:50 +0100 (Fri, 06 Nov 2026) | 1 line
+
+reintegracja brancha b_279777 do trunka
+------------------------------------------------------------------------
+r29 | 279771 | 2026-11-06 11:19:24 +0100 (Fri, 06 Nov 2026) | 1 line
+Merged via: r31
+
+dodanie podprogramu 279771 do brancha
+------------------------------------------------------------------------
+r28 | 279771 | 2026-11-06 10:38:21 +0100 (Fri, 06 Nov 2026) | 1 line
+Merged via: r31
+
+branch dla 279771
+------------------------------------------------------------------------
+r22 | 279752 | 2026-11-05 16:45:21 +0100 (Thu, 05 Nov 2026) | 1 line
+
+Reintegracja galezi b_279752 do trunk
+------------------------------------------------------------------------
+r20 | 279752 | 2026-11-05 16:41:25 +0100 (Thu, 05 Nov 2026) | 1 line
+Merged via: r22
+
+dodanie podprogramu 279752
+------------------------------------------------------------------------
+r19 | 279752 | 2026-11-05 16:23:48 +0100 (Thu, 05 Nov 2026) | 1 line
+Merged via: r22
+
+Utworzenie galezi dla studenta 279752
+------------------------------------------------------------------------
+r16 | 279743 | 2026-11-05 00:04:53 +0100 (Thu, 05 Nov 2026) | 1 line
+
+feat: merge 279743 into trunk
+------------------------------------------------------------------------
+r15 | 279743 | 2026-11-04 23:55:54 +0100 (Wed, 04 Nov 2026) | 1 line
+Merged via: r16
+
+feat: add 279743's solution - nth prime number
+------------------------------------------------------------------------
+r14 | 279743 | 2026-11-04 21:52:50 +0100 (Wed, 04 Nov 2026) | 1 line
+Merged via: r16
+
+chore: create branch 279743
+------------------------------------------------------------------------
+r13 | mk1 | 2024-10-29 13:45:35 +0100 (Tue, 29 Oct 2024) | 2 lines
+
+wykonano: `svn propset svn:mime-type 'text/plain;charset=utf-8' $(find app_1/ -type f )`
+
+------------------------------------------------------------------------
+r10 | 999 | 2016-10-24 13:55:29 +0200 (Mon, 24 Oct 2016) | 3 lines
+
+999 zreintegrował swoją gałąź z trunk-iem 
+
+
+------------------------------------------------------------------------
+r1 | admin | 2016-10-17 14:28:36 +0200 (Mon, 17 Oct 2016) | 3 lines
+
+początkowa wersja projektu.
+
+
+------------------------------------------------------------------------
+(17:29:52)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ svn blame -g main.c
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+       1      admin #include "program.h"
+       1      admin 
+       1      admin 
+       1      admin int main(int argc, char *argv[])
+       1      admin {
+       1      admin 
+G      5        999   if(argc!=2)
+       1      admin     {
+       1      admin       program_usage();
+       1      admin       exit(EXIT_FAILURE);
+       1      admin     }
+       1      admin 
+       1      admin   {
+       1      admin     int idx=atoi(argv[1]);
+       1      admin     switch( idx )
+       1      admin       {
+G      5        999       case 0:
+G      5        999         s0_podprogram() ; // podprogram studenta o numerze indeksu 0
+G      5        999         break;
+G      5        999        case 999:
+G     15     279743             s999_podprogram() ; // podprogram studenta o numerze indeksu 999
+G     15     279743             break;
+G     15     279743       case 279743:
+G     15     279743         s279743_podprogram() ; // podprogram studenta o numerze indeksu 279743
+G     15     279743         break;
+G     20     279752       case 279752:
+G     20     279752         s279752_podprogram();
+G     20     279752         break;
+G     29     279771       case 279771:
+G     29     279771         s279771_podprogram(); // podprogram studenta o numerze indeksu 279771
+G     29     279771         break;
+G     35     272135       case 272135:
+G     35     272135         s272135_podprogram(); // podprogram studenta o numerze indeksu 272135
+G     35     272135         break;
+G     41     279767       case 279767:
+G     41     279767         s279767_podprogram(); // podprogram studenta o numerze indeksu 279767
+G     41     279767         break;
+G     47     279686       case 279686:
+G     47     279686     s279686_podprogram(); // podprogram studenta o numerze indeksu 279686
+G     47     279686     break;
+G     53     279717       case 279717:
+G     53     279717     s279717_podprogram(); // podprogram studenta o numerze indeksu 279717
+G     53     279717     break;
+G     59     279734     case 279734:
+G     59     279734       s279734_podprogram(); // podprogram studenta o numerze indeksu 279734
+G     59     279734       break;
+G     59     279734     default:
+       1      admin     printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",idx); 
+       1      admin       break;
+       1      admin 
+       1      admin       }
+       1      admin   }
+       1      admin   exit(EXIT_SUCCESS);
+       1      admin }
+(17:30:04)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ # Porównanie - wynik powinien być absolutnie pusty (brak różnic)                                                                                                                                             
+svn diff https://repo.cs.pwr.edu.pl/p-0/app_1/trunk https://repo.cs.pwr.edu.pl/p-0/app_1/tags/v_279734                                                                                                          
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+(17:30:42)-(wztq)-(~/studia/sem7/sp/lista3/app_1) 
+ $ tmux capture-pane -p -S'-' -E'-' -J > my-log
+
