@@ -8,3 +8,10 @@ There is some code. // Don't mind this comment.
 
  // This entire line should be deleted.
 There is some more code.
+
+/*
+la
+la
+
+ la     */ la
+    Test how to works.
