@@ -1,0 +1,9 @@
+Jak to działa i czym różni się od poprzedniego?
+
+Główna zmiana zaszła w potoku (pipeline) przetwarzającym tekst:
+
+    find ... -print0 | while IFS= read -r -d '' file; do ... done — Pętla iteruje po każdym znalezionym pliku osobno (zabezpieczając się przy tym przed spacjami w nazwach plików za pomocą flagi -print0).
+
+    grep -oE '\w+' "$file" | tr '[:upper:]' '[:lower:]' | sort -u — To polecenie wykonuje się dla każdego pliku oddzielnie. Wyciąga z niego słowa, zamienia je na małe litery, a następnie sort -u usuwa duplikaty. Dzięki temu, nawet jeśli słowo "include" wystąpiło w pliku 50 razy, na wyjściu pętli z tego pliku pojawi się tylko jeden raz.
+
+    ... done | sort | uniq -c | sort -nr — Strumienie unikalnych słów z poszczególnych plików są ze sobą łączone. Teraz, jeśli słowo "include" pojawi się w tym głównym strumieniu 4 razy, oznacza to, że uniq -c zliczy dokładnie 4 pliki, w których to słowo wystąpiło. Wynik jest sortowany malejąco.
