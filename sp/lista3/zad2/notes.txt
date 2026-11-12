@@ -1,0 +1,15 @@
+Jak działa część analityczna (potok zliczający)?
+
+Wykorzystany łańcuch poleceń (|) robi po kolei następujące rzeczy:
+
+    find ... -exec cat {} + — Znajduje wszystkie pliki w pobranym drzewie i wypisuje ich zawartość (skleja w jeden wielki strumień tekstu).
+
+    grep -oE '\w+' — Wyciąga z tekstu wyłącznie pojedyncze słowa (litery, cyfry, podkreślenia) i wypisuje każde w nowej linijce.
+
+    tr '[:upper:]' '[:lower:]' — Zamienia wszystkie duże litery na małe (aby słowo Include i include było policzone razem).
+
+    sort — Sortuje wszystkie słowa alfabetycznie (narzędzie uniq wymaga posortowanych danych wejściowych).
+
+    uniq -c — Grupuje powtarzające się, sąsiadujące słowa i dopisuje z lewej strony liczbę ich wystąpień.
+
+    sort -nr — Sortuje ostateczny wynik liczbowo (-n) i malejąco (-r), dzięki czemu najczęściej występujące słowa lądują na samym szczycie listy.
