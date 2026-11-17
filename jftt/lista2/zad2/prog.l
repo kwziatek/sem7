@@ -2,18 +2,57 @@
 %{
 #include <stdio.h>
 
+int string_w = 1; /* string_w = 1 : czekamy na stringa */
+int comment_w = 1; /* comment_w = 1: czekamy na komentarz */
+
 %}
+
+ /* Deklaracja stanów skanera (Start Conditions) */
+
 
 %%
  /* Rules section */
 ^[ \t]*"--".*\n?    { /* Jeżeli na początku linii (^) są tylko tabulatory, spacje i komentarz,
                         to usuwamy cały wiersz. */
                     }
-"--".*              { /* Jeśli komentarz jest w środku linii, usuwamy go, 
-                        i wszystko, co jest po nim */
-                    }
- /* Czysty tekst i puste linie zostaną automatycznie wypisane, nie trzeba reguł. */
+\"                  { /* Jeżeli jesteśmy w komentarzu, pomijamy, jeżeli w stringu,
+                        zamykamy string. W przeciwnym razie zamykamy stringa */
+                        if (!comment_w) {
 
+                        } else if(!string_w) {
+                            string_w = 1;
+                            printf("%s", yytext);
+                        } else {
+                            string_w = 0;
+                            printf("%s", yytext);
+                        }
+                    }
+
+"--"                { /* Jeżeli jesteśmy w stringu, wyświetlamy. W przeciwnym razie
+                        zaczynamy komentarz */
+                        if (!string_w) {
+                            printf("%s", yytext);
+                        } else {
+                            comment_w = 0;
+                        }
+                    }
+\n                  { /* Jeśli jesteśmy w komentarzu, zamykamy */
+                        if(!comment_w) {
+                            comment_w = 1;
+                        } 
+                        printf("%s", yytext);
+                    }
+[^ \t\"\n-]+         { /* Jeśli w komentarzu, pomijamy. W przeciwnym razie, wyświetlamy. */
+                        if(comment_w) {
+                            printf("%s", yytext);
+                        } 
+                    }
+.                   { 
+                        /* Drobne znaki (np. pojedyncze spacje/tabulatory poza stringiem/komentarzem) */
+                        if (comment_w) {
+                            printf("%s", yytext);
+                        }
+                    }
 %%
  /* Code section */
 

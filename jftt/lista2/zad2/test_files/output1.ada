@@ -3,6 +3,10 @@ use Ada.Numerics.Elementary_Functions;
 with Ada.Numerics;
 use Ada.Numerics;
 
+"-- this should NOT be commented out"lala
+
+lala
+
 package body Geometry is
     function distance(point1, point2 : Point) return Float is begin
         return Sqrt(
