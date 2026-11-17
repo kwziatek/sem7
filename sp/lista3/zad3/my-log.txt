@@ -1,0 +1,61 @@
+(13:49:28)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ #Karol Wziątek - 279734
+(13:49:33)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn co https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista3/zad3/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Restored 'zad3/l3z3.sh'
+Checked out revision 129.
+(13:49:37)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ cd zad3/
+(13:49:44)-(wztq)-(~/studia/sem7/sp/lista3/zad3) 
+ $ ./l3z3.sh 15 https://repo.cs.pwr.edu.pl/info/SP/l3/a/                                                                            
+      7 b
+      7 a
+      5 ab
+      3 bb
+      3 aa
+      2 abb
+      2 aab
+      1 bbb
+      1 bab
+      1 abbbb
+      1 abbab
+      1 ababb
+      1 abaab
+      1 aba
+      1 aabbb
+      1 aabab
+      1 aaabb
+      1 aaaab
+      1 aaa
+(13:50:01)-(wztq)-(~/studia/sem7/sp/lista3/zad3) 
+ $ ./l3z3.sh 18 https://repo.cs.pwr.edu.pl/info/SP/l3/a/                                                                            
+      7 b
+      7 a
+      5 ab
+      3 c
+      3 bb
+      3 aa
+      2 d
+      2 abb
+      2 aab
+      1 dd
+      1 bbb
+      1 bab
+      1 abbbb
+      1 abbab
+      1 ababb
+      1 abaab
+      1 aba
+      1 aabbb
+      1 aabab
+      1 aaabb
+      1 aaaab
+      1 aaa
+(13:50:08)-(wztq)-(~/studia/sem7/sp/lista3/zad3) 
+ $ tmux capture-pane -p -S'-' -E'-' -J > my-log
+(13:50:29)-(wztq)-(~/studia/sem7/sp/lista3/zad3) 
+ $ tmux capture-pane -p -S'-' -E'-' -J > my-log.txt
+

@@ -1,0 +1,60 @@
+(13:42:40)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ #Karol Wziątek - 279734
+(13:42:45)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ svn co https://repo.cs.pwr.edu.pl/279734-dir/mk1/sp/lista3/zad2/
+Authentication realm: <https://repo.cs.pwr.edu.pl:443> Subversion Repository 
+Password for '279734': *******
+
+Restored 'zad2/l3z2.sh'
+Checked out revision 127.
+(13:42:50)-(wztq)-(~/studia/sem7/sp/lista3) 
+ $ cd zad2/
+(13:42:57)-(wztq)-(~/studia/sem7/sp/lista3/zad2) 
+ $ ./l3z2.bash 15 https://repo.cs.pwr.edu.pl/info/SP/l3/a/
+-bash: ./l3z2.bash: No such file or directory
+(13:43:06)-(wztq)-(~/studia/sem7/sp/lista3/zad2) 
+ $ ./l3z2.sh 15 https://repo.cs.pwr.edu.pl/info/SP/l3/a/                                                                            
+     10 b
+     10 a
+      6 ab
+      3 bb
+      3 aa
+      2 abb
+      2 aab
+      1 bbb
+      1 bab
+      1 abbbb
+      1 abbab
+      1 ababb
+      1 abaab
+      1 aba
+      1 aabbb
+      1 aabab
+      1 aaabb
+      1 aaaab
+      1 aaa
+(13:43:14)-(wztq)-(~/studia/sem7/sp/lista3/zad2) 
+ $ ./l3z2.sh 23 https://repo.cs.pwr.edu.pl/info/SP/l3/a/                                                                            
+      6 a
+      5 b
+      4 ab
+      3 c
+      3 aa
+      2 d
+      2 aab
+      1 bb
+      1 bab
+      1 abbbb
+      1 abbab
+      1 abb
+      1 ababb
+      1 abaab
+      1 aba
+      1 aabbb
+      1 aabab
+      1 aaabb
+      1 aaaab
+      1 aaa
+(13:43:25)-(wztq)-(~/studia/sem7/sp/lista3/zad2) 
+ $ tmux capture-pane -p -S'-' -E'-' -J > my-log.txt     
+
